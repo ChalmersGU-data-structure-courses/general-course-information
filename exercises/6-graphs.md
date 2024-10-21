@@ -1,4 +1,4 @@
-# Exercises: Hash tables
+# Exercises: Graphs
 
 **Note:** The exercises are optional, but highly recommended. If you are uncertain about any problem or want to discuss, write in the course discussion channel, or ask a teacher.
 
