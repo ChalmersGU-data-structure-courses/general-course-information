@@ -59,7 +59,10 @@ More information:
 ### Written examination
 
 - There is a written exam at the end of the course; as usual it is compulsory and individual.
-- Your final course grade will be decided from your result on the written exam. 
+- The written exam will consist of 6 basic questions and 3 advanced questions.
+    - to pass you need to get 5 basic questions correct
+    - to get a higher grade you will need to answer the advanced questions
+- Your final course grade will be decided from your result on the written exam.
 - You are allowed to bring *one double sided A4 sheet of hand written notes* to the exam. It can contain anything you want, though a summary of the course material is a popular choice. The sheet must be handed in with the exam, but only for the purpose of determining if it adheres to the rules (and to make grading more entertaining, the sheets are sometimes quite the works of art). You can get the sheet back afterwards if you need it for a re-exam or want to frame it and hang it on your wall.
 
 More information:
