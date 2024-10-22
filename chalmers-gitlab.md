@@ -50,7 +50,7 @@ Each lab comes with specific instructions on what you should implement and what 
 
 To interact with the provided git repository, you have several options:
 
-- Using a terminal (Git Bash on Windows). [Clone](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#clone-with-ssh) the git repository via SSH:
+- Using a terminal (or Git Bash on Windows). [Clone](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#clone-with-ssh) the git repository via SSH:
 
   ![chalmers-gitlab-clone-ssh.png](img/chalmers-gitlab-clone-ssh.png)
 
