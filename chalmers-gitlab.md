@@ -22,14 +22,14 @@ You can also [set your name](https://git.chalmers.se/-/profile) and a profile pi
 
 ### Set up an SSH key
 
-You will use git to synchronize your local work with the lab project on Chalmers GitLab. For this, you need an SSH key.
+You will use git to synchronize your local work with the lab project on Chalmers GitLab. For this, you need an SSH key ([explained here](https://git.chalmers.se/help/user/ssh.md)). Here is a short summary:
 
-1. If you have not generated an SSH key before: open a terminal and run `ssh-keygen`, leaving all input prompts empty (including empty password).
-2. The public part of your key is stored relative to your home directory in `.ssh/id_<something>.pub`. You want the contents of this file (copy it so you can paste it in your browser). It should look something like this (the initial part may differ depending on settings): "ssh-ed25519 longstringofnumbersandcharacters your.email@student.chalmers.se"
-3. Add the contents of this file as a [key on Chalmers GitLab](https://git.chalmers.se/-/profile/keys).
+1. If you have not generated an SSH key before: open a terminal and run `ssh-keygen`, leaving all input prompts empty (we recommend an empty password).
+2. The public part of your key is stored relative to your home directory in `.ssh/id_<something>.pub`. Copy its content (so you can paste it in your browser).
+3. Go to [SSH keys on Chalmers GitLab](https://git.chalmers.se/-/user_settings/ssh_keys) and add a new key, pasting the contents of the above file.
 4. Check your setup by running `ssh -T git@git.chalmers.se` in your terminal. You may be prompted to confirm the authenticity of the host. The command should then print a welcome sentence.
 
-Here are [more detailed instructions](https://git.chalmers.se/help/user/ssh.md). If you have any problems, ask on Discord or talk to a teaching assistant during lab supervision.
+If you have any problems, ask on Discord or talk to a teaching assistant during lab supervision.
 
 **Note**: If you use the Chalmers lab computers, you may experience a problem with git cloning. This is due to the following:
 
