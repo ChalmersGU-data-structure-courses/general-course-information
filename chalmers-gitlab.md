@@ -24,9 +24,26 @@ You can also [set your name](https://git.chalmers.se/-/profile) and a profile pi
 
 You will use git to synchronize your local work with the lab project on Chalmers GitLab. For this, you need an SSH key.
 
-1. If you have not generated an SSH key before: open a terminal and run `ssh-keygen`, leaving all input prompts empty (including empty password).
-2. The public part of your key is stored relative to your home directory in `.ssh/id_<something>.pub`. You want the contents of this file (copy it so you can paste it in your browser). It should look something like this (the initial part may differ depending on settings): "ssh-ed25519 longstringofnumbersandcharacters your.email@student.chalmers.se"
-3. Add the contents of this file as a [key on Chalmers GitLab](https://git.chalmers.se/-/profile/keys).
+If you are a Mac or Linux user, you can simply open the terminal. However, if you are using Windows, it is best to use Git Bash, which makes the entire process easier. You can also use it for pushing and pulling afterwards.
+
+1. If you have not generated an SSH key before, open the terminal and run `ssh-keygen -t ed25519 -C "your-student-email"`. Alternatively, you can use RSA for your SSH key by running `ssh-keygen -t rsa -b 2048 -C "your-student-email"`, leaving all input prompts empty (including empty password).
+2. The public part of your key is stored in `.ssh/id_<something>.pub` in your home directory. You need the contents of this file (copy it so you can paste it in your browser). The method of copying differs depending on the operating system you use:
+   - For Mac, run: `tr -d '\n' < ~/.ssh/id_ed25519.pub | pbcopy`.
+   - For Windows (in Git Bash), run: `cat ~/.ssh/id_ed25519.pub | clip`.
+   - For Linux, run: `xclip -sel clip < ~/.ssh/id_ed25519.pub`.
+
+   Reminder: If you generated an rsa replace the ed25519 with rsa. The SSH should look something like this (the initial part may differ depending on settings): "ssh-ed25519 longstringofnumbersandcharacters your.email@student.chalmers.se"
+3. Add the contents of this file aka the key to the gitlab.
+  you can fallow these steps: 
+  - Sign in to GitLab. On the left sidebar, select your avatar.
+  - Select Edit profile.
+  - On the left sidebar, select SSH Keys.
+  - Select Add new key.
+  - In the Key box, paste the contents of your public key. If you manually   copied the key, make sure you copy the entire key
+  - In the Title box, type a description, like Laptop or Home-Workstation.
+  - Optional. Select the Usage type of the key. It can be used either for Authentication or Signing or both. Authentication & Signing is the default value.
+  - Optional. Update Expiration date to modify the default expiration date.
+
 4. Check your setup by running `ssh -T git@git.chalmers.se` in your terminal. You may be prompted to confirm the authenticity of the host. The command should then print a welcome sentence.
 
 Here are [more detailed instructions](https://git.chalmers.se/help/user/ssh.md). If you have any problems, ask on Discord or talk to a teaching assistant during lab supervision.
@@ -50,13 +67,15 @@ Each lab comes with specific instructions on what you should implement and what 
 
 To interact with the provided git repository, you have several options:
 
-- [Clone](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#clone-with-ssh) the git repository via SSH:
+- [Clone](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#clone-with-ssh) the git repository via SSH: 
 
   ![chalmers-gitlab-clone-ssh.png](img/chalmers-gitlab-clone-ssh.png)
 
   Each time you want to do some work in your local copy:
     - `git pull` to [pull](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#download-the-latest-changes-in-the-project) the latest changes other group members might have done,
-    - `git add -u` and `git commit` to [add and commit](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#add-and-commit-local-changes) your own changes,
+    - `git add -u` and `git commit` to [add and commit](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#add-and-commit-local-changes) your own changes
+      - <sub>Note: Do not push unnecessary files; only push the edited file.
+       `git add the-files-you-have-changed`) Replace the-files-you-have-changed with the file(s) name.
     - `git push` to [push](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#send-changes-to-gitlabcom) to GitLab.
 
   For a summary of useful commands, see the [git cheatsheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf).
