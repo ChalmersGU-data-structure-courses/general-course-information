@@ -80,7 +80,7 @@ Upcoming exam dates:
 
 ## Course instances
 
-Note: The academic year is divided into four study periods (läsperioder, LP), where LP1 is September--October, LP2 is November--January, LP3 is January--March, and LP4 is March--June.
+Note: The academic year is divided into four study periods (läsperioder, LP), where LP1 is September–October, LP2 is November–January, LP3 is January–March, and LP4 is March–June.
 
 ### LP1, TDA417+DAT525
 - Only Chalmers students
