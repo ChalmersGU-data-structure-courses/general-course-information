@@ -1,10 +1,16 @@
 # Working with Chalmers GitLab
 
-## Access Chalmers GitLab
+## Setting up SSH, Git and Chalmers GitLab
+
+First you have to set up everything on your computer.
+There's a [dedicated tutorial for that](setup-gitlab.md),
+which you shouldn't have to follow more than once (in the lifetime of your computer).
+
+### Accessing Chalmers GitLab
 
 Open [Chalmers GitLab](https://git.chalmers.se/dashboard/projects) (git.chalmers.se). Sign in with **Chalmers Login** (ignore the username/password fields):
 
-![chalmers-gitlab-sign-in.png](img/chalmers-gitlab-sign-in.png)
+![Signing in to Chalmers GitLab](img/chalmers-gitlab-sign-in.png)
 
 You will see all your current projects. If a lab project is missing, it could be because:
 
@@ -14,60 +20,68 @@ You will see all your current projects. If a lab project is missing, it could be
 
 If you still do not see the project after refreshing 5 minutes later, our systems are down. Let us know!
 
-## Configure your account
+### Configuring your account
 
 GitLab will notify you about new lab projects and gradings of your submissions via your Chalmers student address. You can change this by [adding an email address](https://git.chalmers.se/-/profile/emails) and then setting this as the [notification email](https://git.chalmers.se/-/profile/notifications). **Make sure to configure an email address you actually read.**
 
-You can also [set your name](https://git.chalmers.se/-/profile) and a profile picture, if you wish.
+You can also [set your name](https://git.chalmers.se/-/user_settings/profile) and a profile picture, if you wish.
 
-### Set up an SSH key
-
-You will use git to synchronize your local work with the lab project on Chalmers GitLab. For this, you need an SSH key ([explained here](https://git.chalmers.se/help/user/ssh.md)). Here is a short summary:
-
-1. If you have not generated an SSH key before: open a terminal and run `ssh-keygen -C your@email`, leaving all input prompts empty (we recommend an empty password).
-2. The public part of your key is stored relative to your home directory in `.ssh/id_<something>.pub`. Open it in a text editor and copy its content (so you can paste it in your browser).
-3. Go to [SSH keys on Chalmers GitLab](https://git.chalmers.se/-/user_settings/ssh_keys) and add a new key, pasting the contents of the above file.
-4. Check your setup by running `ssh -T git@git.chalmers.se` in your terminal. You may be prompted to confirm the authenticity of the host. The command should then print a welcome sentence.
-
-If you have any problems, ask on Discord or talk to a teaching assistant during lab supervision.
-
-**Note**: If you use the Chalmers lab computers, you may experience a problem with git cloning. This is due to the following:
-
-- `ssh-keygen` puts the key in `.ssh` in your user folder on the C drive.
-- git looks for your key in `.ssh` in your Z drive.
-
-To solve this, just copy over the `.ssh` directory from your user folder on the C drive to the Z drive.
-
-## Work on a lab
+## Setting up a lab
 
 For each lab assignment, we add you as a developer to a project on Chalmers GitLab. Scrolling down past the file listing, you will see the lab description (this is the file `README.md`, written in Markdown). You can use this project as you see fit (issues, merge requests, etc.), but mainly it consists of a **git repository**. For group projects, you can choose how to collaborate: together on one computer or everyone using their own computer and using git to synchronize changes.
 
+### Structuring your repositories
+
+You should take some time to organise the files and folders on your computer.
+How you do this is up to you, as long as it works for you.
+One possibility is to have a generic "school" folder, which you can divide into your separate courses.
+Let's assume that you have created a folder `...\school\data-structures\` where you will put all your labs.
+
+
+### Cloning your lab
+
+First you have to "clone" the lab repository to your computer – you only have to do this once (per lab).
+This is the way to do it if you're using a terminal:
+
+1. Go to the lab repository in your browswer. In the top there's a menu, click on "Code":
+
+    ![chalmers-gitlab-clone-ssh.png](img/chalmers-gitlab-clone-ssh.png)
+
+    Copy the SSH URL by clicking the marked button.
+
+2. Navigate to your personal data structures folder (as described above):
+
+    ```cd ...\school\data-structures```
+
+3. [Clone with SSH](https://git.chalmers.se/help/topics/git/clone.md#clone-with-ssh):
+    Write `git clone ` and then paste the SSH URL you copied.
+
+You can also clone directly from the GitLab interface, if you are using
+VSCode ([instructions](https://git.chalmers.se/help/topics/git/clone.md#clone-and-open-in-visual-studio-code)) or
+IntelliJ ([instructions](https://git.chalmers.se/help/topics/git/clone.md#clone-and-open-in-intellij-idea)):
+
+![chalmers-gitlab-clone-IDE.png](img/chalmers-gitlab-clone-IDE.png)
+
+**Note**: If you use the Chalmers lab computers, you may experience a problem with git cloning. [Read more about that here](setup-gitlab.md#install-git).
+
+
+## Working on a lab
+
 Each lab comes with specific instructions on what you should implement and what questions you should answer (in `answers.txt`). Please do not change the signatures or behaviour of pre-existing methods unless instruncted as it will make your submission harder for us to test and grade. Of course, you are allowed to add things that do not affect the existing functionality (new variables, functions, methods, classes, and, most importantly, comments).
 
-### Use git
-
-[Git](https://en.wikipedia.org/wiki/Git) is the industry standard for version control and collaborative software development. Make sure [it is installed](https://git.chalmers.se/help/topics/git/how_to_install_git/index.md) on your system and working. It will pay off to [become familiar](https://git.chalmers.se/help/gitlab-basics/start-using-git.md) with it!
+### Using git
 
 To interact with the provided git repository, you have several options:
 
-- Using a terminal (or Git Bash on Windows). [Clone](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#clone-with-ssh) the git repository via SSH:
-
-  ![chalmers-gitlab-clone-ssh.png](img/chalmers-gitlab-clone-ssh.png)
-
+- Using a terminal.
   Each time you want to do some work in your local copy:
-    - `git pull` to [pull](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#download-the-latest-changes-in-the-project) the latest changes other group members might have done,
-    - `git add -u` and `git commit` to [add and commit](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#add-and-commit-local-changes) your own changes,
-    - `git push` to [push](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#send-changes-to-gitlabcom) to GitLab.
+    - `git pull` to [pull](https://git.chalmers.se/help/topics/git/commands.md#git-pull) the latest changes other group members might have done,
+    - `git add -u` and `git commit` to [add and commit](https://git.chalmers.se/help/topics/git/commit.md) your own changes,
+    - `git push` to [push](https://git.chalmers.se/help/topics/git/commit.md#send-changes-to-gitlab) to GitLab.
 
   For a summary of useful commands, see the [git cheatsheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf).
 
-- If you use an IDE such as IntelliJ or Eclipse, it comes with built-in git integration. For example, in IntelliJ, simply create a project using ***File → New → Project from Version Control*** and paste the repository SSH URL you get from the project page by clicking on ***Clone***.
-
-  **Note**: If IntelliJ highlights lots of strange errors after cloning, you need to set up the project SDK (any recent version will do):
-
-  ![intellij-setup-java.png](img/intellij-setup-java.png)
-
-  Alternatively, go to ***File → Project Stucture...*** and specify a Project SDK version.
+- If you use an IDE such as VSCode, IntelliJ or Eclipse, it comes with built-in git integration. For example, in VSCode, if you open a window in your lab folder it should recognise automatically that the folder is a git repository.
 
 To simplify things, we suggest you only use the default branch (called ***main***) and do not create extra branches. Then you won't have to interact with the branching functionality of git.
 
@@ -76,23 +90,25 @@ To simplify things, we suggest you only use the default branch (called ***main**
 Each lab is offered in two version: Java and Python. You can choose which one to work with. If you just open the project, you get the Python version. To switch to Java, read on.
 
 There are branches ***java*** and ***python*** in your project. You can have a look at them, but they cannot be modified (they represent the starting state that your submission will be compared against). Instead, you work on the default branch ***main***. By default, it points to ***python***. To change it to Java, you can run the following git commands:
-
-- `git switch --force-create main origin/java`
-- `git push --set-upstream --force origin main`
+```
+git switch --force-create main origin/java
+git push --set-upstream --force origin main
+```
 
 **Warning**: this will erase all previous work on branch ***main***. You can make a backup beforehand if desired:
+```
+git branch main-backup main
+```
 
-- `git branch main-backup main`
+### Using Robograder
 
-### Robograder
-
-We contracted elite roboticists to build 
-<span style="background-color: #ffff00;">R</span><span style="background-color: #ffaf40;">o</span><span style="background-color: #ff8080;">b</span><span style="background-color: #ff40af;">o</span><span style="background-color: #ff00ff;">g</span><span style="background-color: #af40ff;">r</span><span style="background-color: #8080ff;">a</span><span style="background-color: #40afff;">d</span><span style="background-color: #00ffff;">e</span><span style="background-color: #4fffaf;">r</span>™. 
+We contracted elite roboticists to build
+<span style="background-color: #ffff00;">R</span><span style="background-color: #ffaf40;">o</span><span style="background-color: #ff8080;">b</span><span style="background-color: #ff40af;">o</span><span style="background-color: #ff00ff;">g</span><span style="background-color: #af40ff;">r</span><span style="background-color: #8080ff;">a</span><span style="background-color: #40afff;">d</span><span style="background-color: #00ffff;">e</span><span style="background-color: #4fffaf;">r</span>™.
 You should **test your code** with Robograder to iron out bugs before you submit. To call Robograber, create a tag like you would for a submission (explained below). But use a **test tag**, starting with `test` (for example `testPlzKThx`). Robograder will respond with an issue in your project. Often it is fast, but it can take up to 15 minutes. You should be notified by email (see above how to set this up).
 
 You are allowed to use Robograder **five times** for each lab. This limitation is to prevent test spamming and encourage you to think instead.
 
-## Submit a lab
+## Submitting a lab
 
 We use the **tags** feature of git for lab submission. When you are ready to submit, go to your project page on GitLab and create a tag:
 
@@ -108,12 +124,12 @@ Once you have created a submission tag, you cannot change it: it serves as your 
 
 **Note**: The tag must live in the Chalmers GitLab repository, not just your local git clone. If you create the tag locally and then push, make sure to **push tags**.
 
-You can check your submission by visiting ***Repository → Tags***. The submission tag should be highlighted as 
-<span style="background-color: #bfedd2; color: #006000; padding: 0 10px; border-radius: 10px">protected</span>:
+You can check your submission by clicking on ***Code → Tags*** in the Project menu on the left. The submission tag(s) should be highlighted as
+<span style="background-color: #ddd; padding: 0 7px 2px; border-radius: 10px">protected</span>:
 
 ![show-tags.png](img/show-tags.png)
 
-## Get feedback
+### Getting feedback
 
 After you submit a lab, we add you to a special **grading merge request** for your submission. There you can see the grading status of all your submissions. The graders will give their feedback by commenting in this merge request (you should be notified by email).
 
