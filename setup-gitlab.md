@@ -65,7 +65,7 @@ Here are [more detailed/advanced instructions](https://git.chalmers.se/help/user
 
 First you can check if you already have it installed:
 Run `git --version`, if it doesn't print an error you have it.
-Otherwise there are instructions for how to [install it on different distributions](https://git-scm.com/downloads/).
+Otherwise there are instructions for how to [install it on your computer](https://git-scm.com/downloads/).
 
 It will pay off to [become familiar](https://git.chalmers.se/help/tutorials/learn_git.md) with it!
 The student union also has a [good introduction to Git](https://data101.dtek.se/beginner/git/intro.html).
