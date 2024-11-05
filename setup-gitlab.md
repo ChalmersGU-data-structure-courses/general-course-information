@@ -70,6 +70,13 @@ Otherwise there are instructions for how to [install it on your computer](https:
 It will pay off to [become familiar](https://git.chalmers.se/help/tutorials/learn_git.md) with it!
 The student union also has a [good introduction to Git](https://data101.dtek.se/beginner/git/intro.html).
 
+### Set up your name and email
+
+Don't forget to set up your name and chalmers/GU email in Git on your computer:
+```
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+```
 
 ### Problems with git-cloning?
 
