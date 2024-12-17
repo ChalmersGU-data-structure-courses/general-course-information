@@ -68,7 +68,7 @@ This list is sometimes updated, so there might be differences from when you took
 - What data structures can be used to implement what ADTs
 - The main data structures:
     - Lists: arrays, dynamic arrays, linked lists, stacks, queues
-    - Search trees: binary search trees, 2-3 trees, red-black trees, AVL trees
+    - Search trees: binary search trees, 2-3 trees, AVL trees
     - Priority queues: binary heaps
     - Hash tables: separate chaining, linear probing
     - Graphs: undirected, directed, weighted, unweighted
@@ -262,7 +262,7 @@ This list is sometimes updated, so there might be differences from when you took
     - worst-case linear O(*n*)
     - average-case logarithmic O(log *n*) (for "well-behaved input")
     - linear O(*n*) if the elements are added in sorted order
-- Self-balancing search trees (AVL tree, red-black tree, 2-3 tree):
+- Self-balancing search trees (AVL tree, 2-3 tree):
     - worst-case logarithmic O(log *n*)
 - Binary heaps (adding, removing the minimum):
     - worst-case logarithmic O(log *n*)
