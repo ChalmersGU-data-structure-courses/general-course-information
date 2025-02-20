@@ -89,9 +89,9 @@ To simplify things, we suggest you only use the default branch (called ***main**
 
 Each lab is offered in two version: Java and Python. You can choose which one to work with. If you just open the project, you get the Python version. To switch to Java, read on.
 
-There are branches ***java*** and ***python*** in your project. You can have a look at them, but they cannot be modified (they represent the starting state that your submission will be compared against). Instead, you work on the default branch ***main***. By default, it points to ***python***. To change it to Java, you can run the following git commands:
+There are branches ***problem-java*** and ***problem-python*** in your project. You can have a look at them, but they cannot be modified (they represent the starting state that your submission will be compared against). Instead, we recommend you work on the default branch ***main***. By default, it points to ***problem-python***. To change it to Java, you can run the following git commands:
 ```
-git switch --force-create main origin/java
+git switch --force-create main origin/problem-java
 git push --set-upstream --force origin main
 ```
 
