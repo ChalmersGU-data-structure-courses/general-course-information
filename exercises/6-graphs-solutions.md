@@ -15,7 +15,8 @@ Here are suggested solutions to the exercises about graphs.
 
 ### A2. Adjacency lists
 
-The last edge added (say x–y) will be first in two adjacency lists (x–y in adj(x) and y–x in adj(y)). So, any adjacency list where there is no edge occurring first twice is impossible, such as this one:
+The last edge added (say x–y) will be first in two adjacency lists (x–y in adj(x) and y–x in adj(y)).
+So, any adjacency list where there is no edge occurring first twice is impossible, such as this one:
 
 - A ⟼ [A–B, A–D]
 - B ⟼ [B–C, B–A]
@@ -73,11 +74,15 @@ Any two out of the four possible topological orderings of the graph:
 
 ### C1. Compute a MST
 
-There is only one MST, and it's a tree with the following three branches: A–D–E–H–G,  A–B–C,  and D–F. (In other words, the following edges are not in the MST: BE, CE, FG).
+There is only one MST, and it's a tree with the following three branches: A–D–E–H–G, A–B–C, and D–F.
+(In other words, the following edges are not in the MST: BE, CE, FG).
 
-- [a] Kruskal: Consider the edges in weight order – add an edge to the SPT if it doesn't create a cycle. The edges will be added in the following order: AD, DE, GH, AB, BC, DF, EH. (DE and GH can be added in any order, as can AB and BC)
+- [a] Kruskal:
+  Consider the edges in weight order – add an edge to the SPT if it doesn't create a cycle.
+  The edges will be added in the following order: AD, DE, GH, AB, BC, DF, EH. (DE and GH can be added in any order, as can AB and BC).
 
-- [b] Prim, starting from A: The edges will be added to the SPT in the following order: AD, DE, AB, BC, DF, EH, GH
+- [b] Prim, starting from A:
+  The edges will be added to the SPT in the following order: AD, DE, AB, BC, DF, EH, GH.
 
 ### C2. Maximum spanning tree
 
@@ -94,8 +99,8 @@ Alternatively (and equivalently): build a tree the same way you would a minimum 
 
 ### D1. Draw the shortest path tree
 
-- [a] a tree consisting of the two branches 0→2 and 0→4→5→1→3→6
-- [b] a tree consisting of the single branch 0→6→3→1→5→4  (node 2 is unreachable)
+- [a] a tree consisting of the two branches 0→2 and 0→4→5→1→3→6,
+- [b] a tree consisting of the single branch 0→6→3→1→5→4 (node 2 is unreachable).
 
 ### D2. Draw another SPT
 
@@ -112,8 +117,11 @@ See here: <http://www.graphclasses.org/smallgraphs.html#nodes2>
 
 ### E2. Removing vertices
 
-- [a] Proof sketch: Every connected graph has a spanning tree. If you remove a leaf of the spanning tree, the graph will not become disconnected. (A leaf is a node with degree 1)
-- [b] Left as exercise.
+- [a] Proof sketch:
+  Every connected graph has a spanning tree.
+  If you remove a leaf of the spanning tree, the graph will not become disconnected.
+  (A leaf is a node with degree 1)
+- [b] Left as an exercise.
 
 ### E3. Eccentricity
 
@@ -132,7 +140,7 @@ Here's a sketch:
 
 ### E4. Eulerian and Hamiltonian cycles
 
-Left as exercise.
+Left as an exercise.
 
 
 ## Directed graphs (F)
@@ -168,7 +176,7 @@ These are part of the integer sequence [A003087 "Number of acyclic digraphs with
 
 ### F2. Unique topological ordering
 
-Left as (advanced) exercise.
+Left as an (advanced) exercise.
 
 
 ## Minimum spanning trees (G)
@@ -211,24 +219,39 @@ Start from the mid node (4), and think about which connections it can have in a 
 
 Our hypothesis: that all edges in a given graph have distinct weights.
 
-We can proceed by contradiction: suppose there are two different MSTs T<sub>1</sub>, T<sub>2</sub>. (Side note: this means particularly that they must have the same overall weight: Σ<sub>e ∈ T<sub>1</sub></sub> ω(e) = Σ<sub>e ∈ T<sub>2</sub></sub> ω(e) ). Since they are different, there must be at least one edge in one of the trees which is not in the other (and vice versa!). Let's say e1 is the edge with minimum possible weight which can be found in one tree but not the other. We may assume e<sub>1</sub> ∈ T<sub>1</sub>, and so e<sub>1</sub> ∉ T<sub>2</sub> (the converse would not affect the following reasoning). If we add e<sub>1</sub> to T<sub>2</sub> (call this new graph G) we would create a cycle in it (make sure you understand why adding an edge between existing nodes in a tree creates a cycle). T<sub>1</sub> is a tree, therefore it cannot contain the cycle we have just created. This means some edge in that cycle must not be in T<sub>1</sub>. Let's name this edge e<sub>2</sub>.
+We can proceed by contradiction: suppose there are two different MSTs $T_1$ and $T_2$.
+(Side note: this means particularly that they must have the same overall weight: $\sum_{e \in T_1} w(e) = \sum_{e \in T_2} w(e)$).
+Since they are different, there must be at least one edge in one of the trees which is not in the other (and vice versa!).
+Let's say $e_1$ is the edge with minimum possible weight which can be found in one tree but not the other.
+We may assume $e_1 \in T_1$, and so $e_1 \not\in T_2$ (the converse would not affect the following reasoning).
+If we add $e_1$ to $T_2$ (call this new graph $G$) we would create a cycle in it (make sure you understand why adding an edge between existing nodes in a tree creates a cycle).
+$T_1$ is a tree, therefore it cannot contain the cycle we have just created. This means some edge in that cycle must not be in $T_1$.
+Let's name this edge $e_2$.
 
-Now we can build a new spanning tree by removing e<sub>2</sub> from G (let's call it T<sub>2</sub><sup>\*</sup>; this graph is still a tree: removing an edge from the cycle in G breaks the cycle and still maintains the connectivity). Necessarily, ω(e<sub>2</sub>) > ω(e<sub>1</sub>) because we chose e1 to be the smallest edge only present in one of the trees. So ω( T<sub>2</sub><sup>\*</sup> ) = ω(T<sub>2</sub>) + ω(e<sub>1</sub>) – ω(e<sub>2</sub>) < ω(T<sub>2</sub>). That is, T<sub>2</sub><sup>\*</sup> is a spanning tree with lower weight than the initial T<sub>2</sub>. We've arrived at a contradiction! (T<sub>2</sub> was assumed to be a minimum spanning tree.)
+Now we can build a new spanning tree by removing $e_2$ from $G$ (let's call it $T_2^\star$; this graph is still a tree: removing an edge from the cycle in G breaks the cycle and still maintains the connectivity).
+Necessarily, $w(e_2) > w(e_1)$ because we chose $e_1$ to be the smallest edge only present in one of the trees.
+So $w(T_2^\star) = w(T_2) + w(e_1) – w(e_2) < w(T_2)$.
+That is, $T_2^\star$ is a spanning tree with lower weight than the initial $T_2$.
+We've arrived at a contradiction!
+($T_2$ was assumed to be a minimum spanning tree.)
 
 
 ### Shortest paths (H)
 
 ### H1. Vertex weights
 
-Sketch: Split every vertex into two: one with only the ingoing edges and one with only the outgoing edges. Connect the two using one new edge having the weight of the original vertex.
+Sketch:
+Split every vertex into two: one with only the ingoing edges and one with only the outgoing edges.
+Connect the two using one new edge having the weight of the original vertex.
 
 ### H2. Number maze
 
 General idea: create a *directed* graph where:
 
-- nodes are positions in the grid
-- edges reflect the legal moves by connecting each node (via outgoing edges) to those other positions in the maze one can jump to from it
+- nodes are positions in the grid,
+- edges reflect the legal moves by connecting each node (via outgoing edges) to those other positions in the maze one can jump to from it.
 
 We may then solve the shortest path problem between the node corresponding to the start cell (source of the path) and the node corresponding to the goal cell.
 
-Note that more details should be worked out to implement this! E.g.: how to specify which edges to have in the graph.
+Note that more details should be worked out to implement this!
+E.g.: how to specify which edges to have in the graph.

@@ -12,7 +12,8 @@ You can get the sheet back afterwards if you need it for a re-exam or want to fr
 
 ## Grading
 
-There are 6 basic questions and 3 advanced questions. The basic questions are graded either correct or incorrect, while the advanced questions are awarded 0, 1 or 2 points each.
+There are 6 basic questions and 3 advanced questions.
+The basic questions are graded either correct or incorrect, while the advanced questions are awarded 0, 1 or 2 points each.
 
 We use the following very complicated formula to calculate your final grade, where `basic` and `advanced` are integers ≤6:
 
@@ -30,5 +31,4 @@ Or, formulated differently:
 - To get grade 4, you must also be awarded at least 2 points for the advanced questions.
 - To get grade 5, you must also be awarded at least 4 points for the advanced questions.
 
-(If your course uses the G/VG grading scale, then you need 3 advanced points to get a VG).
-
+(If your course uses the G/VG grading scale, then you need 3 advanced points to get a VG.)

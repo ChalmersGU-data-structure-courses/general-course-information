@@ -6,7 +6,10 @@ Here are suggested solutions to some of week 1's exercises.
 
 ### A1. Adapt binary search so that it works on arrays that are sorted in descending order.
 
-Suppose we are searching for 5 in the array `[9, 7, 5, 4, 3, 2, 1]`. We first search the midpoint, which is 4. Since the array is in descending order, 5 should come *before* 4, so we should search in the *left* half of the array. So the procedure we use follows the *opposite* rules compared to binary search:
+Suppose we are searching for 5 in the array `[9, 7, 5, 4, 3, 2, 1]`.
+We first search the midpoint, which is 4.
+Since the array is in descending order, 5 should come *before* 4, so we should search in the *left* half of the array.
+So the procedure we use follows the *opposite* rules compared to binary search:
 
 - If the item we are searching for is *less* than the midpoint, search in the *right* half of the array.
 - If the item we are searching for is *greater* than the midpoint, search in the *left* half of the array.
@@ -35,13 +38,16 @@ binarySearch(array, item):
 
 ### A2. Finding the integer square root.
 
-We use the same principles as binary search: make a guess, and then figure out if the guess was *too high*, *too low* or *correct*. Suppose that we guess *m* as the square root of *n*. Then we can check our guess as follows:
+We use the same principles as binary search: make a guess, and then figure out if the guess was *too high*, *too low* or *correct*.
+Suppose that we guess *m* as the square root of *n*. Then we can check our guess as follows:
 
 - If *m*<sup>2</sup> ≤ *n* < (*m*+1)<sup>2</sup>, then the guess is *correct*.
 - If *m*<sup>2</sup> > *n*, then the guess is *too high*.
 - Otherwise, the guess is *too low*.
 
-We also need a lower and upper bound on the correct value of *m*. Since the integer square root of *n* always lies between 0 and *n*, we can use those as the initial bounds. We get the following psuedocode:
+We also need a lower and upper bound on the correct value of *m*.
+Since the integer square root of *n* always lies between 0 and *n*, we can use those as the initial bounds.
+We get the following psuedocode:
 
 ```python
 integerSquareRoot(n):
@@ -56,11 +62,17 @@ integerSquareRoot(n):
             # we guessed too low, restrict search to above m
             lo = m + 1
         else: # m*m <= n and (m+1)*(m+1) > n
-            # we guessed right
+            # we guessed right
             return m
 ```
 
-**Note**: How do computers actually compute the square root? They also start with a guess and continue to improve it. The [simplest practical method](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method) is as follows: Suppose the current guess is called *x*. If *x* is smaller than *√n*, then *n/x* is larger than *√n*, and vice versa. So we take their average!
+**Note**:
+How do computers actually compute the square root?
+They also start with a guess and continue to improve it.
+The [simplest practical method](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method) is as follows:
+Suppose the current guess is called *x*.
+If *x* is smaller than *√n*, then *n/x* is larger than *√n*, and vice versa.
+So we take their average for the next guess!
 
 ### A3. Sorting {4,6,8,2,9,5,1} by hand
 
@@ -101,7 +113,9 @@ First, partition the array:
 -   ---------
 ```
 
-Next, make two recursive calls to sort the two partitions. The left partition `{1}` is a base case. Here is what happens with the right partition `{8,4,9,5,6}` (`|` indicates the part of the array we are sorting):
+Next, make two recursive calls to sort the two partitions.
+The left partition `{1}` is a base case.
+Here is what happens with the right partition `{8,4,9,5,6}` (`|` indicates the part of the array we are sorting):
 
 ```
 1 2 | 8 4 9 5 6 - pivot is 8
@@ -186,17 +200,24 @@ merge(array1, array2):
 
 ## Bonus exercises
 
-### B1.  Use binary search to make a "guess-the-number" game.
+### B1. Use binary search to make a "guess-the-number" game.
 
 The code is like normal binary search, but instead of using the Java comparison functions, ask a question to the user.
 
-You can, e.g., use two numbers MIN and MAX, which start at MIN = 0 and MAX = 10 000. Then repeat guessing the average number, and update MIN or MAX depending on my answer. The code is similar to integer square root.
+You can, e.g., use two numbers MIN and MAX, which start at MIN = 0 and MAX = 10,000.
+Then repeat guessing the average number, and update MIN or MAX depending on my answer.
+The code is similar to integer square root.
 
 ### B1 (HARDER). Extend your program so that I can pick any positive number.
 
-First we have to find a MAX which is larger than the number I am thinking about. We can do this by repeated doubling: Start by guessing (say) 10 000. If my number is larger, then double your guess until you exceed my number. Now you can set MAX to the last guess and continue using binary search.
+First we have to find a MAX which is larger than the number I am thinking about.
+We can do this by repeated doubling: Start by guessing (say) 10,000.
+If my number is larger, then double your guess until you exceed my number.
+Now you can set MAX to the last guess and continue using binary search.
 
-Why double the guess every time? Because that way, if I am thinking of some large number n, the program guesses the value of MAX in *log_2_ n* guesses, and then starts the binary search. So, this way it can guess the exact number in a logarithmic number of guesses, regardless of how large a number I am thinking of.
+Why double the guess every time?
+Because that way, if I am thinking of some large number n, the program guesses the value of MAX in *log_2_ n* guesses, and then starts the binary search.
+So, this way it can guess the exact number in a logarithmic number of guesses, regardless of how large a number I am thinking of.
 
 ### B2. Removing all duplicates; finding the mode
 
@@ -204,9 +225,13 @@ Both these exercises are a bit tricky!
 
 #### Removing all duplicates.
 
-First we sort the array so that duplicate elements come next to each other. Then we are going to create an output array containing the input array without duplicates. To do so, we first count how many duplicates there are, create an output array of that size and then copy the input to the output while skipping duplicates.
+First we sort the array so that duplicate elements come next to each other.
+Then we are going to create an output array containing the input array without duplicates.
+To do so, we first count how many duplicates there are, create an output array of that size and then copy the input to the output while skipping duplicates.
 
-**Note:** Counting the number of duplicates is only needed if we want to store the result in an array, because then we need to know the capacity of the array up-front. If we are storing the result in e.g. a dynamic array then we can skip that step!
+**Note:**
+Counting the number of duplicates is only needed if we want to store the result in an array, because then we need to know the capacity of the array up-front.
+If we are storing the result in e.g. a dynamic array then we can skip that step!
 
 ```python
 # The code below only works for non-empty arrays
@@ -232,12 +257,13 @@ for i in 1 to n:
 
 #### Finding the most common element.
 
-First we sort the array. Then we loop through the array, keeping track of:
+First we sort the array.
+Then we loop through the array, keeping track of:
 
-- The most common element so far
-- How many times that element has occurred
-- The element we are currently looking at
-- How many times that element has occurred
+- the most common element so far,
+- how many times that element has occurred,
+- the element we are currently looking at,
+- how many times that element has occurred.
 
 ```python
 # First sort the array so that all occurrences of the same value occur next to one another in the array.
@@ -262,17 +288,22 @@ for each elem in array:
 return mostCommonElement
 ```
 
-### B5. Finding anagrams
+### B5. Finding anagrams
 
 #### a) How can you use sorting to check if two words are anagrams of one another?
 
-Sort the letters in each word in ascending order. If the words are anagrams, sorting them should give the same string. For example, "silent" is an anagram of "listen" because sorting the letters of either of them gives "eilnst".
+Sort the letters in each word in ascending order.
+If the words are anagrams, sorting them should give the same string.
+For example, "silent" is an anagram of "listen" because sorting the letters of either of them gives "eilnst".
 
 #### b) Write a program that reads in a list of words and efficiently finds all anagrams.
 
-Define a function `anagramForm(word)` which returns the letters of the given `word` in alphabetical order. For example, `anagramForm("listen") == "eilnst"`.
+Define a function `anagramForm(word)` which returns the letters of the given `word` in alphabetical order.
+For example, `anagramForm("listen") == "eilnst"`.
 
-Now sort the words, but using a custom ordering: instead of sorting the words in alphabetical order, sort them according to the alphabetical order of their anagram form. In Java, this can be done using
+Now sort the words, but using a custom ordering: instead of sorting the words in alphabetical order, sort them according to the alphabetical order of their anagram form.
+In Java, this can be done using
+
 ```java
 words.sort(Comparator.comparing(word -> anagramForm(word)));
 ```
@@ -283,10 +314,11 @@ and in Python using
 words.sort(key = lambda word: anagramForm(word))
 ```
 
-Now you have a list of all words, ordered by their anagram form. Then given a word, you can compute its anagram form, and use binary search on this list to find all words having the same anagram form. Note that you need the specialised binary searches from lab 2 to find the first and last match in the list.
+Now you have a list of all words, ordered by their anagram form.
+Then given a word, you can compute its anagram form, and use binary search on this list to find all words having the same anagram form.
+Note that you need the specialised binary searches from lab 2 to find the first and last match in the list.
 
 ## Extreme exercises
 
-We won't spoil these. You can continue to try them over the course!
-
-
+We won't spoil these.
+You can continue to try them over the course!

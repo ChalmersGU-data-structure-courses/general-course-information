@@ -7,10 +7,12 @@ Here is a detailed list what topics you should know for the exam, and also what 
 {:toc}
 
 ***Note***:
-An exam question (particular advanced ones) may still touch on a topic not explicitly listed (or even listed as not required to know). But if that happens, solving the question does not require prior knowledge of that topic.
+An exam question (particular advanced ones) may still touch on a topic not explicitly listed (or even listed as not required to know).
+But if that happens, solving the question does not require prior knowledge of that topic.
 
 ***Note for old students***:
-This list is sometimes updated, so there might be differences from when you took the course! If you plan to write a reexam, please make sure you know all topics in this list, even if it was not part of your course instance.
+This list is sometimes updated, so there might be differences from when you took the course!
+If you plan to write a re-exam, please make sure you know all topics in this list, even if it was not part of your course instance.
 
 ## Algorithms and programming
 

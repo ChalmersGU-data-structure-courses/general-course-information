@@ -14,13 +14,20 @@ What you should notice is that for question **A2**, the binary search tree becom
 
 ### A3. Implement the following functions on BSTs
 
-- `smallest(tree) -> int`: The smallest value is in the leftmost node, so go left until there are no more left children.
+- `smallest(tree) -> int`:
+  The smallest value is in the leftmost node, so go left until there are no more left children.
 
-- `delete_minimum(tree) -> BST`: If the leftmost node is a leaf, then we can just delete it. Otherwise it must have one single right child (why?). Now, reassign the parent of the smallest node to point to the right child.
+- `delete_minimum(tree) -> BST`:
+  If the leftmost node is a leaf, then we can just delete it.
+  Otherwise it must have one single right child (why?).
+  Now, reassign the parent of the smallest node to point to the right child.
 
-- `delete(tree, value) -> BST`: See the course book and the lecture slides for an implementation.
+- `delete(tree, value) -> BST`:
+  See the course book and the lecture slides for an implementation.
 
-- `bst_to_list(tree) -> list of int`: Call yourself recursively with the left child, and with the right child. Then return the concatenation, but don't forget to put the root node value in between the two lists.
+- `bst_to_list(tree) -> list of int`:
+  Call yourself recursively with the left child, and with the right child.
+  Then return the concatenation, but don't forget to put the root node value in between the two lists.
 
 ### A4. Implement set operations
 
@@ -39,48 +46,65 @@ difference(s1, s2):
         s1.remove(x)
 ```
 
-**Bonus part**: We will only show the solution for difference.
+**Bonus part**:
+We will only show the solution for difference.
 
 Here are two ways to implement set difference, with different complexities:
 
 - Method 1: for each key $k$ in $s_2$, delete $k$ from $s_1$
 - Method 2: for each key $k$ in $s_1$, if $k$ is found in $s_2$ then delete $k$ from $s_1$
 
-Suppose that $s_1$ has size $M$ and $s_2$ has size $N$ (note different notation from the question because we use capital $N$ and $M$). Then method 1 takes time proportional to $N$ log $M$, while method 2 takes time proportional to $M$ log max($M, N$). Therefore, the solution is:
+Suppose that $s_1$ has size $M$ and $s_2$ has size $N$ (note different notation from the question because we use capital $N$ and $M$).
+Then method 1 takes time proportional to $N \log(M)$, while method 2 takes time proportional to $M \log(\max(M, N))$.
+Therefore, the solution is:
 
-- If $s_1$ is bigger than $s_2$, use method 1, otherwise use method 2. (Note: if we use method 2 then $s_1$ is smaller than $s_2$ and so max($M, N$) = $N$).
+- If $s_1$ is bigger than $s_2$, use method 1, otherwise use method 2.
+  (Note: if we use method 2 then $s_1$ is smaller than $s_2$ and so $\max(M, N) = N$).
 
 ### A5. Sorting using a BST
 
-- a) It's not a sorting algorithm because if the input has duplicates, it discards them. (However, that may be fixed by allowing duplicates in a BST.)
-- b) It takes O(n log(n)) time, where n is the size of the input. Shuffling takes O(n) time, there are n insertions which take O(log(n)) time each, and the in-order traversal takes O(n) time.
-- c) Shuffling makes sure that the BST we create is balanced. Inserting keys in a random order produces (with high probability) a BST with O(log(n)) height, so the insertions take O(log(n)) time. Without this step, sorting e.g. an input that was already sorted would take quadratic time (n insertions, each taking O(n) time).
+- a)
+  It's not a sorting algorithm because if the input has duplicates, it discards them.
+  (However, that may be fixed by allowing duplicates in a BST.)
+- b)
+  It takes O(n log(n)) time, where n is the size of the input.
+  Shuffling takes O(n) time, there are n insertions which take O(log(n)) time each, and the in-order traversal takes O(n) time.
+- c)
+  Shuffling makes sure that the BST we create is balanced.
+  Inserting keys in a random order produces almost surely a BST with O(log(n)) height, so the insertions take O(log(n)) time.
+  Without this step, sorting e.g. an input that was already sorted would take quadratic time (n insertions, each taking O(n) time).
 
 ### A6. Multisets and multimaps
 
-**For a multiset**: use a balanced BST map where the values are integers. Here are some possible operations:
+**For a multiset**: use a balanced BST map where the values are integers.
+Here are some possible operations:
 
-- `count(x) -> int`: get the count of a particular element. (Implementation: look up the key in the BST, return 0 if not found.)
+- `count(x) -> int`: get the count of a particular element.
+  (Implementation: look up the key in the BST, return 0 if not found.)
 
-- Set-like operations, such as union and intersection. Typically for multisets we say e.g. that if *S* contains *m* copies of a key *x*, and *T* contains *n* copies of *x*, then *S* ∪ *T* should contain *m+n* copies of *x*.
+- Set-like operations, such as union and intersection.
+  Typically for multisets we say e.g. that if *S* contains *m* copies of a key *x*, and *T* contains *n* copies of *x*, then *S* ∪ *T* should contain *m+n* copies of *x*.
 
   - <details><summary><em>Click here to see a sketch of an implmeentation that does this:</em></summary>
 
     ```python
     union(other):
         for key in other.keys():
-            if not this.contains(key):
+            if not this.contains(key):
                 this.put(key, 0)
-        this.put(key, this.get(key) + other.get(key)
+        this.put(key, this.get(key) + other.get(key)
     ```
     </details>
 
-**For a multimap**: use a balanced BST where the values are sets. Possible extra operations include:
+**For a multimap**: use a balanced BST where the values are sets.
+Possible extra operations include:
 
 - Iterating through all key-value pairs
 - Taking the union or intersection of two multimaps
-- `valuesFor(x) -> Set`: return all values associated with a particular key. (Implementation: look up the key in the BST, return the empty set if not found.)
-- `contains(x, v) -> boolean`: check if a given key-value pair is in the multimap. (Implementation: look up the key in the BST to get a set of values, look up the value in that set.)
+- `valuesFor(x) -> Set`: return all values associated with a particular key.
+  (Implementation: look up the key in the BST, return the empty set if not found.)
+- `contains(x, v) -> boolean`: check if a given key-value pair is in the multimap.
+  (Implementation: look up the key in the BST to get a set of values, look up the value in that set.)
 
 <details><summary><em>Click here to see a more detailed implementation for multisets:</em></summary>
 
@@ -119,6 +143,4 @@ class Multiset:
 
 ## Bonus exercises
 
-TBD
-
-
+To be done.
