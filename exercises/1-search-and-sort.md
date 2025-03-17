@@ -12,23 +12,23 @@ We recommend you try all the core exercises. Try some of the bonus exercises if 
 **A1**.
 Adapt binary search so that it works on arrays that are sorted in *descending* instead of ascending order.
 
-- <details><summary><em>Hint:</em></summary>
-  First write down an example array and try to do the binary search "by hand". Then figure out what rules you followed.
-  </details>
+<details><summary><em>Hint:</em></summary>
+First write down an example array and try to do the binary search "by hand". Then figure out what rules you followed.
+</details>
 
 **A2**.
 The *integer square root* of a natural number *n* is the largest natural number *m* such that *m<sup>2</sup> ≤ n*.
 For example, the integer square root of 105 is 10.
 
-- Design an algorithm to calculate the integer square root of *n* using binary search.
-  You can use multiplication and comparison of integers.
+Design an algorithm to calculate the integer square root of *n* using binary search.
+You can use multiplication and comparison of integers.
 
 **A3**.
 Sort the sequence `4 6 8 2 9 5 1` by hand with:
 
-- Insertion sort
-- Quicksort (using the median-of-three pivot)
-- Mergesort
+- insertion sort,
+- quicksort (using the median-of-three pivot),
+- mergesort.
 
 **A4**.
 Implement (in code or pseudocode) the following methods, which are important components of sorting algorithms:
@@ -47,9 +47,9 @@ Your program makes another guess and so on until it gets the right number.
 
 **Harder:** extend your program so that I can pick any positive number, not just ones up to 10000.
 
-- <details><summary><em>Hint:</em></summary>
-  First try to find a number which is bigger than mine.
-  </details>
+<details><summary><em>Hint:</em></summary>
+First try to find a number which is bigger than mine.
+</details>
 
 **B2**.
 Write programs (in code or pseudocode) that use sorting to solve the following problems:
@@ -77,9 +77,9 @@ Suppose that you want to sort the books on your bookshelf, say into alphabetical
 **B5**.
 How can you use sorting to check if two words are anagrams of one another?
 
-- <details><summary><em>Hint:</em></summary>
-  You will need to sort the array in an order which makes all anagrams appear next to each other.
-  </details>
+<details><summary><em>Hint:</em></summary>
+You will need to sort the array in an order which makes all anagrams appear next to each other.
+</details>
 
 **Harder:** write a program that reads in a list of words and efficiently finds all anagrams.
 
@@ -90,7 +90,7 @@ Your goal is to find out where in the sorted list the key should be inserted. Bu
 
 **C1**.
 Every morning, you can choose an element of the list and ask if it is smaller than the key.
-However, you get the answer only on the evening of the following day.
+However, you get the answer only on the evening of the following day (after 36 hours).
 (Comparisons can take a long time, you know!)
 For example, you get the answer to your first question only after you ask the second question.
 
@@ -103,6 +103,7 @@ But you can guess wrong at most three times!
 
 - If *n* = 100, how many guesses do you need to find the answer?
 - What's the largest *n* for which you can find the answer with 10 guesses?
-- <details><summary><em>Hint:</em></summary>
-  First try to solve it with three times replaced by two times (or even just one time).
-  </details>
+
+<details><summary><em>Hint:</em></summary>
+First try to solve it with three times replaced by two times (or even just one time).
+</details>

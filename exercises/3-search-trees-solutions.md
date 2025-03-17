@@ -6,9 +6,9 @@ Here are suggested solutions to the exercises about search trees.
 
 ### A1 and A2. Insert values into a tree
 
-- For binary search trees, try the [BST visualisation](https://chalmersgu-data-structure-courses.github.io/dsvis/collections.html?algorithm=BST)
-- For AVL trees, try the [AVL visualisation](https://chalmersgu-data-structure-courses.github.io/dsvis/collections.html?algorithm=AVL)
-- For 2-3 trees, try the [B-tree visualisation](https://chalmersgu-data-structure-courses.github.io/dsvis/collections.html?algorithm=BTree) and choose the option "Max degree = 2/3-tree"
+- For binary search trees, try the [BST visualisation](https://chalmersgu-data-structure-courses.github.io/dsvis/collections.html?algorithm=BST).
+- For AVL trees, try the [AVL visualisation](https://chalmersgu-data-structure-courses.github.io/dsvis/collections.html?algorithm=AVL).
+- For 2-3 trees, try the [B-tree visualisation](https://chalmersgu-data-structure-courses.github.io/dsvis/collections.html?algorithm=BTree) and choose the option "Max degree = 2/3-tree".
 
 What you should notice is that for question **A2**, the binary search tree becomes extremely unbalanced, while the others do not because they are self-balancing!
 
@@ -51,15 +51,15 @@ We will only show the solution for difference.
 
 Here are two ways to implement set difference, with different complexities:
 
-- Method 1: for each key $k$ in $s_2$, delete $k$ from $s_1$
-- Method 2: for each key $k$ in $s_1$, if $k$ is found in $s_2$ then delete $k$ from $s_1$
+- Method 1: for each key k in s<sub>2</sub>, delete k from s<sub>1</sub>.
+- Method 2: for each key k in s<sub>1</sub>, if k is found in s<sub>2</sub> then delete k from s<sub>1</sub>.
 
-Suppose that $s_1$ has size $M$ and $s_2$ has size $N$ (note different notation from the question because we use capital $N$ and $M$).
-Then method 1 takes time proportional to $N \log(M)$, while method 2 takes time proportional to $M \log(\max(M, N))$.
+Suppose that s<sub>1</sub> has size M and s<sub>2</sub> has size N (note different notation from the question because we use capital N and M).
+Then method 1 takes time proportional to N log(M), while method 2 takes time proportional to M log(max(M, N)).
 Therefore, the solution is:
 
-- If $s_1$ is bigger than $s_2$, use method 1, otherwise use method 2.
-  (Note: if we use method 2 then $s_1$ is smaller than $s_2$ and so $\max(M, N) = N$).
+- If s<sub>1</sub> is bigger than s<sub>2</sub>, use method 1, otherwise use method 2.
+  (Note: if we use method 2 then s<sub>1</sub> is smaller than s<sub>2</sub> and so max(M, N) = N.
 
 ### A5. Sorting using a BST
 

@@ -14,7 +14,8 @@ So the procedure we use follows the *opposite* rules compared to binary search:
 - If the item we are searching for is *less* than the midpoint, search in the *right* half of the array.
 - If the item we are searching for is *greater* than the midpoint, search in the *left* half of the array.
 
-Here it is in psuedocode. It's just like the normal binary search algorithm, except that the two lines marked `(*)` have been swapped.
+Here it is in pseudocode.
+It's just like the normal binary search algorithm, except that the two lines marked `(*)` have been swapped.
 
 ```python
 binarySearch(array, item):
@@ -78,7 +79,7 @@ So we take their average for the next guess!
 
 #### Insertion sort
 
-`|` indicates the part of the array which is sorted.
+The symbol `|` indicates the boundary between the sorted and unsorted parts of the array.
 
 ```
 4 | 6 8 2 9 5 1 - now insert 6

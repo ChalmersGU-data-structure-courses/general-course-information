@@ -15,13 +15,13 @@ Try some of the bonus exercises if you want to learn more.
 **B1**.
 Simplify the following orders of growth.
 
-- $O(10 n^10 + 5 n^5 + 2 ^2 + 1)$
-- $O(1/n^2 + 1/n + 1)$
-- $O((5n + 2)(7 – 3/n)(n + 1))$
-- $O(log(n^2) / log(n))$
-- $O(log(n^2 + 1) / log(n))$
-- $O(1 + n^100 / 2^n)$
-- $O(log(log(n)) + log(n))$
+- O(10*n*<sup>10</sup> + 5*n*<sup>5</sup> + 2*n*<sup>2</sup> + 1)
+- O(1/*n*<sup>2</sup> + 1/*n* + 1)
+- O((5*n* + 2)(7 – 3/*n*)(*n* + 1))
+- O(log(*n*<sup>2</sup>) / log(*n*))
+- O(log(*n*<sup>2</sup> + 1) / log(*n*))
+- O(1 + *n*<sup>100</sup> / 2<sup>*n*</sup>)
+- O(log(log(*n*)) + log(*n*))
 
 **B2**.
 Suppose we want to be able to delete elements from a dynamic array of size *n*.
@@ -125,12 +125,12 @@ They can all be found ([here, but you have to scroll down a bit](https://algs4.c
 **C3**.
 Prove or disprove the following statements:
 
-- If $f(n) \in O(g(n))$, then $2^{f(n)} \in O(2^{g(n)}$.
-- If $f(n) \in O(g(n))$, then $\log(f(n)) \in O(\log(g(n))$.
+- If *f*(*n*) ∈ O(*g*(*n*)), then 2<sup>*f*(*n*)</sup> ∈ O(2<sup>*g*(*n*)</sup>).
+- If *f*(*n*) ∈ O(*g*(*n*)), then log *f*(*n*) ∈ O(log(*g*(*n*))).
   Assume *g*(*n*) ≥ 2 here.
 
 **C4**.
-For $f, g \colon \mathbb{N} \to \mathbb{R}_0$, we consider *f* *less or equal than* *g* if *f*(*n*) ∈ O(*g*(*n*)).
+For *f*, *g* : ℕ → ℝ<sub>&gt;0</sub>, we consider *f* *less or equal than* *g* if *f*(*n*) ∈ O(*g*(*n*)).
 Convince yourself that this defines a [preorder](https://en.wikipedia.org/wiki/Preorder) on functions from natural numbers to positive reals.
 This means the following:
 
@@ -141,10 +141,10 @@ Conclude that *f*(*n*) ∈ O(*g*(*n*)) is equivalent to O(*f*(*n*)) ⊆ O(*g*(*n
 so the preorder is equivalently that of subset inclusion.
 
 Show that the above preorder is not a total order (so orders of growth, and also complexity classes, are not ordered linearly!).
-That is, there are $f, g \colon \mathbb{N} \to \mathbb{R}_0$ such that neither *f*(*n*) ∈ O(*g*(*n*)) nor *g*(*n*) ∈ O(*f*(*n*)).
+That is, there are *f*, *g* : ℕ → ℝ<sub>&gt;0</sub> such that neither *f*(*n*) ∈ O(*g*(*n*)) nor *g*(*n*) ∈ O(*f*(*n*)).
 Show that this holds even when restricted to monotone (increasing) functions.
 
 **C5**.
-Let $f \colon \mathbb{N} \to \mathbb{R}_0$ be monotone (increasing).
-We say that *f* has *polynomial order of growth* if there is *k* ∈ ℕ such that $f(n) \in O(n^k)$.
-Show that *f* has polynomial order of growth if $f(2^n) \in O(f(n))$.
+Let *f* : ℕ → ℝ<sub>&gt;0</sub> be monotone (increasing).
+We say that *f* has *polynomial order of growth* if there is *k* ∈ ℕ such that *f*(*n*) ∈ O(*n*<sup>*k*</sup>).
+Show that *f* has polynomial order of growth if *f*(2<sup>*n*</sup>) ∈ O(*f*(*n*)).

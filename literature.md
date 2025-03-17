@@ -9,7 +9,7 @@ For doing the labs you will want to look up the [Java collections library docume
 ## Interactive visualisation tools
 
 There are several tools available for visualising how different data structures and algorithms work.
-Our favourites are of course developed by ourselves :blush:.
+Our favourites are of course developed by ourselves :).
 
 - [Very smooth and responsive visualisations](https://chalmersgu-data-structure-courses.github.io/dsvis/).
   Currently only for a couple of data structures: search trees and binary heaps.

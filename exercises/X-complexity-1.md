@@ -23,14 +23,14 @@ What is the asymptotic time complexity (in *n*) of the following operations, ass
 The moral is that all data structures make tradeoffs – choosing a different representation will make some operations faster but others slower.
 
 **A2**.
-What are the orders of growth of these functions of $n$?
+What are the orders of growth of these functions of *n*?
 
-- $3 n^3 + 2 n^2 + 199$
-- $3 n^3 – 2 n^2 – 199$
-- $3 n^3 \cdot 2 n^2 \cdot 199$
-- $3 n^3 / 2 n^2 / 199$
-- $(n + 2 n^2)(2*n* + 3 n^2)$
-- $(n + 2 n)(2 \log_2(n) + 3 \log_2(n))$
+- 3*n*<sup>3</sup> + 2*n*<sup>2</sup> + 199
+- 3*n*<sup>3</sup> – 2*n*<sup>2</sup> – 199
+- 3*n*<sup>3</sup> · 2*n*<sup>2</sup> · 199
+- 3*n*<sup>3</sup> / 2*n*<sup>2</sup> / 199
+- (*n* + 2*n*<sup>2</sup>)(2*n* + 3*n*<sup>2</sup>)
+- (*n* + 2*n*)(2 log<sub>2</sub>(*n*) + 3 log<sub>2</sub>(*n*))
 
 **A3**.
 Calculate the asymptotic complexities of the following code fragments.
@@ -62,7 +62,7 @@ Fragment **f2** is solved for you already.
     - Outer loop runs *n* times
     - For each value of *i*, inner loop runs *n*–1 times.
     - In total, the innermost loop body runs *n*(*n*–1) times.
-    - We have $T(n) = n(n-1) \in O(n^2)$.
+    - We have T(*n*) = *n*(*n*-1) ∈ O(*n*<sup>2</sup>)$$.
 
 - **f3**:
 
@@ -116,8 +116,8 @@ Parts of this question are answered by the lectures on sorting.
 For other parts, you may find the answer in the course book.
 
 **A5**.
-Suppose you have an array of *n* elements, then you can check if it has duplicate elements in $O(n^2)$ time by looping over every pair of elements.
-But if the array is sorted, you can do it in $O(n)$ time.
+Suppose you have an array of *n* elements, then you can check if it has duplicate elements in O(*n*<sup>2</sup>) time by looping over every pair of elements.
+But if the array is sorted, you can do it in O(*n*) time.
 How?
 
 **A6** (exercise 1.4.12 from S&W). Write a program that, given two sorted arrays of *n* integer values, prints all elements that appear in both arrays, in sorted order. The running time of your program should be proportional to *n* in the worst case.
@@ -171,4 +171,3 @@ This program is very similar to a step in one of the algorithms that you have se
     ```
 
    *Note*: The only difference between **f7** and **f9** are that in **f7** the inner loop goes to *n*, while in **f9** the inner loop goes to *i*. This makes a difference!
-

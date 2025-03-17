@@ -108,7 +108,7 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
     - how to insert (including rebalancing), how to search
 - Asymptotic complexity of insertion and searching
     - linear in the height of the tree
-    - hence, logarithmic O(log *n*) for balanced trees
+    - hence, logarithmic O(log(*n*)) for balanced trees
     - linear O(*n*) for general general trees
 - Traversing a tree
     - preorder, inorder, postorder
@@ -186,9 +186,9 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
 - The most important order-of-growth classes:
     - names for them (constant, logarithmic, linear, linearithmic (linear times logarithmic), quadratic, cubic, exponential)
     - how they compare
-    - negligible growth: O(1) < O(log<sub>2</sub> *n*) = O(log<sub>10</sub> *n*) = O(log *n*) < O((log *n*)<sup>2</sup>)
-    - acceptable growth for big *n*: O(*n*) < O(*n* log *n*)
-    - growing fast: O(*n*<sup>2</sup>) < O(*n*<sup>2</sup> log *n*) < O(*n*<sup>3</sup>)
+    - negligible growth: O(1) < O(log<sub>2</sub>(*n*)) = O(log<sub>10</sub>(*n*)) = O(log(*n*)) < O(log(*n*)<sup>2</sup>)
+    - acceptable growth for big *n*: O(*n*) < O(*n* log(*n*))
+    - growing fast: O(*n*<sup>2</sup>) < O(*n*<sup>2</sup> log(*n*)) < O(*n*<sup>3</sup>)
     - growing too fast except for tiny *n*: O(2<sup>*n*</sup>) < O(10<sup>*n*</sup>) < O(*n*!)
 - How to add and multiply complexity classes
 
@@ -232,7 +232,7 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
 ### Complexity cheat sheet
 **Life hack**: Do not memorize the below asymptotic complexities. Instead, focus on how the algorithms and data structures work. If you understand that, you can regenerate the asymptotic complexities on demand. So just use the below to double-check what you got.
 
-- Binary search in a sorted array: logarithmic O(log *n*)
+- Binary search in a sorted array: logarithmic O(log(*n*))
 - Linear search: linear O(*n*)
 - Selection sort:
     - quadratic O(*n*<sup>2</sup>) (independent of input)
@@ -240,11 +240,11 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
     - quadratic O(*n*<sup>2</sup>)
     - linear O(*n*) for sorted lists
 - Merge sort:
-    - linearithmic O(*n* log *n*) (independent of input)
+    - linearithmic O(*n* log(*n*)) (independent of input)
 - Quicksort:
     - worst-case quadratic O(*n*<sup>2</sup>)
-    - average-case linearithmic O(*n* log *n*)
-    - expected linearithmic O(*n* log *n*) if using a random pivot
+    - average-case linearithmic O(*n* log(*n*))
+    - expected linearithmic O(*n* log(*n*)) if using a random pivot
     - quadratic O(*n*<sup>2</sup>) on sorted lists, if using the take-first pivot selection strategy
 - Dynamic arrays:
     - appending an element at the end:
@@ -252,7 +252,7 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
         - amortized constant O(1)
     - constant O(1) for accessing a given index (position)
     - worst-case linear O(*n*) for finding an element
-    - worst-case logarithmic O(log *n*) for finding an element in a sorted array (binary search)
+    - worst-case logarithmic O(log(*n*)) for finding an element in a sorted array (binary search)
 - Linked lists:
     - constant O(1) for adding an element at the front
     - worst-case linear O(*n*) for finding an element, or looking up an index
@@ -262,13 +262,13 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
     - it is amortized because we are using a dynamic array behind the scenes
 - BSTs (searching, adding and deleting):
     - worst-case linear O(*n*)
-    - average-case logarithmic O(log *n*) (for "well-behaved input")
+    - average-case logarithmic O(log(*n*)) (for "well-behaved input")
     - linear O(*n*) if the elements are added in sorted order
 - Self-balancing search trees (AVL tree, 2-3 tree):
-    - worst-case logarithmic O(log *n*)
+    - worst-case logarithmic O(log(*n*))
 - Binary heaps (adding, removing the minimum):
-    - worst-case logarithmic O(log *n*)
+    - worst-case logarithmic O(log(*n*))
 - Graph algorithms (Kruskal, Prim, UCS/Dijsktra):
-    - worst-case linearithmic O(*n* log *n*) in size *n* of the graph
+    - worst-case linearithmic O(*n* log(*n*)) in size *n* of the graph
     - here, the size n is defined as *n* = \|V\| + \|E\| (we can also use max(\|V\|, \|E\|))
     - for sparse graphs, we can also take *n* = \|V\|

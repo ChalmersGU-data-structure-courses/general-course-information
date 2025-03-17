@@ -28,25 +28,29 @@ Insert the values 1, 2, 3, 4, 5, 6, 7, 8 into an empty:
 Implement the following functions on BSTs:
 
 - `smallest(tree) -> int`: return the smallest value in a BST.
-  - <details><summary><em>Hint:</em></summary>
-    Where in a BST is the smallest value?
-    </details>
+
+  <details><summary><em>Hint:</em></summary>
+  Where in a BST is the smallest value?
+  </details>
 
 - `delete_minimum(tree) -> BST`: delete the smallest value in a BST.
-  - <details><summary><em>Hint:</em></summary>
-    There are two possibilities: either the smallest value is a leaf (which is a straightforward case), or it can be an inner node.
-    If it is an inner node, how many children does it have, and what kind of children?
-    </details>
+
+  <details><summary><em>Hint:</em></summary>
+  There are two possibilities: either the smallest value is a leaf (which is a straightforward case), or it can be an inner node.
+  If it is an inner node, how many children does it have, and what kind of children?
+  </details>
 
 - `delete(tree, value) -> BST`: delete a given value in a BST.
-  - <details><summary><em>Hint:</em></summary>
-    See the course book and the lecture slides.
-    </details>
+
+  <details><summary><em>Hint:</em></summary>
+  See the course book and the lecture slides.
+  </details>
 
 - `bst_to_list(tree) -> list of int`: return the contents of a BST in sorted order.
-  - <details><summary><em>Hint:</em></summary>
-    Make two recursive calls, and then figure out how to combine the results.
-    </details>
+  
+  <details><summary><em>Hint:</em></summary>
+  Make two recursive calls, and then figure out how to combine the results.
+  </details>
 
 You can implement in pseudocode or Java or Python, it's up to you.
 
@@ -60,15 +64,15 @@ The following functions are defined for it:
 
 By using `add`, `remove`, `contains`, and the `Set` iterator, show how to define functions that do set union, intersection, and difference. Specifically, define the following functions, either in code or pseudocode:
 
-- `union(s1, s2)`: Afterwards, $s_1$ should contain the items that were previously in $s_1 \cup s_2$.
-- `intersection(s1, s2)`: Afterwards, $s_1$ should contain the items that were previously in $s_1 \cap s_2$.
-- `difference(s1, s2)`: Afterwards $s_1$ should contain the items that were previously in $s_1$ but not in $s_2$.
+- `union(s1, s2)`: Afterwards, s<sub>1</sub> should contain the items that were previously in s<sub>1</sub> ∪ s<sub>2</sub>.
+- `intersection(s1, s2)`: Afterwards, s<sub>1</sub> should contain the items that were previously in s<sub>1</sub> ∩ s<sub>2</sub>.
+- `difference(s1, s2)`: Afterwards s<sub>1</sub> should contain the items that were previously in s<sub>1</sub> but not in s<sub>2</sub>.
 
-Each operation takes two sets $s_1$ and $s_2$, and stores the union/intersection/difference of the two sets in $s_1$.
+Each operation takes two sets s<sub>1</sub> and s<sub>2</sub>, and stores the union/intersection/difference of the two sets in s<sub>1</sub>.
 
 **Bonus part:**
 Suppose that `Set` is implemented using a balanced BST.
-Show how to implement `intersection` and `difference` so that their runtime is *O(n log m)*, where *n* is the size of the *smaller* of the two sets `this` and `other`, and *m* is the size of the *larger* set.
+Show how to implement `intersection` and `difference` so that their runtime is *O(n log(m))*, where *n* is the size of the *smaller* of the two sets `this` and `other`, and *m* is the size of the *larger* set.
 
 - <details><summary><em>Hint:</em></summary>
   First check which of the sets is larger, then write code for that particular case.

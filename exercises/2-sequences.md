@@ -15,7 +15,7 @@ Assume you have a program that reads words from the terminal or from a text file
 Every word is pushed onto a stack, but if the word is "–", the stack is instead popped and the result printed to the terminal.
 When there are no more words to read the program print the number of items that are left on the stack, and then quits.
 
-- What is the result of running the program on the following input: `it was - the best - of times - - - it was - the - -`?
+What is the result of running the program on the following input: `it was - the best - of times - - - it was - the - -`?
 
 **A2**.
 The same as question A1, but using a queue instead.
@@ -54,16 +54,14 @@ It should support the following operations:
 
 - `set(index, value)`: modify the element at a given index.
 
-- <details><summary><em>Hint:</em></summary>
+<details><summary><em>Hint:</em></summary>
+To implement the data structure, use a normal array but automatically grow it when necessary.
+Use the array-doubling trick to ensure good performance.
+</details>
 
-  To implement the data structure, use a normal array but automatically grow it when necessary.
-  Use the array-doubling trick to ensure good performance.
-  </details>
-
-- <details><summary><em>Hint:</em></summary>
-
-  Note that in `set(...)`, if the index is much bigger than the current size of the array, you may have to double the size more than once.
-  </details>
+<details><summary><em>Hint:</em></summary>
+Note that in `set(...)`, if the index is much bigger than the current size of the array, you may have to double the size more than once.
+</details>
 
 ## Bonus exercises
 
@@ -104,17 +102,19 @@ Note that some of them (but not all) have solutions or hints on the book website
 
 - **31**: *Queue with two stacks*.
   Implement a queue with two stacks so that each queue operations takes a constant amortized number of stack operations.
-  - <details><summary><em>Hint:</em></summary>
-    If you push elements onto a stack and then pop them all, they appear in reverse order.
-    If you repeat this process, they're now back in order.
-    </details>
+
+  <details><summary><em>Hint:</em></summary>
+  If you push elements onto a stack and then pop them all, they appear in reverse order.
+  If you repeat this process, they're now back in order.
+  </details>
 
 - **33**: *Stack with a queue*.
   Implement a stack with a single queue so that each stack operations takes a linear number of queue operations.
-  - <details><summary><em>Hint:</em></summary>
-    To delete an item, get all of the elements on the queue one at a time, and put them at the end, except for the last one which you should delete and return.
-    (Note that this is a very inefficient solution.)
-    </details>
+
+  <details><summary><em>Hint:</em></summary>
+  To delete an item, get all of the elements on the queue one at a time, and put them at the end, except for the last one which you should delete and return.
+  (Note that this is a very inefficient solution.)
+  </details>
 
 **Linked list exercises from Sedgewick & Wayne**
 

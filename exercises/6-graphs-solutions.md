@@ -219,21 +219,22 @@ Start from the mid node (4), and think about which connections it can have in a 
 
 Our hypothesis: that all edges in a given graph have distinct weights.
 
-We can proceed by contradiction: suppose there are two different MSTs $T_1$ and $T_2$.
-(Side note: this means particularly that they must have the same overall weight: $\sum_{e \in T_1} w(e) = \sum_{e \in T_2} w(e)$).
+We can proceed by contradiction: suppose there are two different MSTs T<sub>1</sub>, T<sub>2</sub>.
+(Side note: this means particularly that they must have the same overall weight: Σ<sub>e ∈ T<sub>1</sub></sub> ω(e) = Σ<sub>e ∈ T<sub>2</sub></sub> ω(e)).
 Since they are different, there must be at least one edge in one of the trees which is not in the other (and vice versa!).
-Let's say $e_1$ is the edge with minimum possible weight which can be found in one tree but not the other.
-We may assume $e_1 \in T_1$, and so $e_1 \not\in T_2$ (the converse would not affect the following reasoning).
-If we add $e_1$ to $T_2$ (call this new graph $G$) we would create a cycle in it (make sure you understand why adding an edge between existing nodes in a tree creates a cycle).
-$T_1$ is a tree, therefore it cannot contain the cycle we have just created. This means some edge in that cycle must not be in $T_1$.
-Let's name this edge $e_2$.
+Let's say e<sub>1</sub> is the edge with minimum possible weight which can be found in one tree but not the other.
+We may assume e<sub>1</sub> ∈ T<sub>1</sub>, and so e<sub>1</sub> ∉ T<sub>2</sub> (the converse would not affect the following reasoning).
+If we add e<sub>1</sub> to T<sub>2</sub> (call this new graph G) we would create a cycle in it (make sure you understand why adding an edge between existing nodes in a tree creates a cycle).
+T<sub>1</sub> is a tree, therefore it cannot contain the cycle we have just created.
+This means some edge in that cycle must not be in T<sub>1</sub>.
+Let's name this edge e<sub>2</sub>.
 
-Now we can build a new spanning tree by removing $e_2$ from $G$ (let's call it $T_2^\star$; this graph is still a tree: removing an edge from the cycle in G breaks the cycle and still maintains the connectivity).
-Necessarily, $w(e_2) > w(e_1)$ because we chose $e_1$ to be the smallest edge only present in one of the trees.
-So $w(T_2^\star) = w(T_2) + w(e_1) – w(e_2) < w(T_2)$.
-That is, $T_2^\star$ is a spanning tree with lower weight than the initial $T_2$.
+Now we can build a new spanning tree by removing e<sub>2</sub> from G (let's call it T<sub>2</sub><sup>\*</sup>; this graph is still a tree: removing an edge from the cycle in G breaks the cycle and still maintains the connectivity).
+Necessarily, ω(e<sub>2</sub>) > ω(e<sub>1</sub>) because we chose e1 to be the smallest edge only present in one of the trees.
+So ω( T<sub>2</sub><sup>\*</sup> ) = ω(T<sub>2</sub>) + ω(e<sub>1</sub>) – ω(e<sub>2</sub>) < ω(T<sub>2</sub>).
+That is, T<sub>2</sub><sup>\*</sup> is a spanning tree with lower weight than the initial T<sub>2</sub>.
 We've arrived at a contradiction!
-($T_2$ was assumed to be a minimum spanning tree.)
+(T<sub>2</sub> was assumed to be a minimum spanning tree.)
 
 
 ### Shortest paths (H)
