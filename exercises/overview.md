@@ -12,4 +12,4 @@ Particular data structures and algorithms:
 Complexity:
 
 * [Complexity, part 1](X-complexity-1.md) ([solutions](X-complexity-1-solutions.md))
-* [Complexity, part 1](Y-complexity-2.md) ([solutions](Y-complexity-2-solutions.md))
+* [Complexity, part 2](Y-complexity-2.md) ([solutions](Y-complexity-2-solutions.md))
