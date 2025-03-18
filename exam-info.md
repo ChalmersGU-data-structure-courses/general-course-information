@@ -5,6 +5,8 @@ Upcoming exam dates:
 - 2025 August 21, 14–18
 - 2025 end of October (date not decided yet)
 
+Remember to sign up on Ladok a month in advance!
+
 ## Topics
 
 There is a [long list of topics](exam-topics.md) you should know for the exam.
