@@ -101,7 +101,7 @@ We use a class with these fields:
 The median is the maximum element of the max-heap.
 The two heaps must always have the same size (give or take one element – we allow the max-heap to be one bigger than the min-heap – this will happen if the collection has an odd number of items, and the median is then the maximum element of the max-heap).
 
-<details><summary><em>Click here to see a more detailed implementation for multisets:</em></summary>
+<p><details><summary><em>Click here to see a more detailed implementation for multisets:</em></summary>
 
 ```python
 class MedianCollection
@@ -137,7 +137,7 @@ class MedianCollection
             firstHalf.add(secondHalf.removeMin())
         return median
 ```
-</details>
+</details></p>
 
 ### B2. Implement a priority queue using a red-black BST
 

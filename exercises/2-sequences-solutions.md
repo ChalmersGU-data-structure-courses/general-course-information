@@ -13,7 +13,7 @@ See the solution to question **B1** below and then run it for yourself:)
 The idea is to go through the program and use a counter to track how deeply nested the current position is.
 This counter behaves like a stack where we don't care about the elements, only the size (instead of push/pop, we increment/decrement).
 
-<details><summary><em>Try to implement it first, and then you can click here to reveal a solution in pseudocode.</em></summary>
+<p><details><summary><em>Try to implement it first, and then you can click here to reveal a solution in pseudocode.</em></summary>
 ```python
 comments = 0
 for each character in program:
@@ -29,7 +29,7 @@ for each character in program:
 if comments > 0:
     throw error "comment start without end"
 ```
-</details>
+</details></p>
 
 Assuming we use a dynamic array to store the new program, the time complexity of this algorithm is linear in the length of the original program (i.e., O(n)).
 
@@ -53,7 +53,7 @@ The main idea can be summarised as follows:
 
 Solution:
 
-<details><summary><em>Try to implement it first, and then you can click here to reveal a solution in pseudocode.</em></summary>
+<p><details><summary><em>Try to implement it first, and then you can click here to reveal a solution in pseudocode.</em></summary>
 ```python
 stack = new Stack()
 for each token in the input stream:
@@ -70,7 +70,7 @@ for each token in the input stream:
     else:
         stack.push(token parsed as an integer)
 ```
-</details>
+</details></p>
 
 ### A5. Sequence of queue operations
 
@@ -82,7 +82,7 @@ So if you enqueue the numbers 0 to 9, then the only sequence that can occur is 0
 
 This is a variant of a dynamic array.
 
-<details><summary><em>Try to implement it first, and then you can click here to reveal a suggestion in pseudocode.</em></summary>
+<p><details><summary><em>Try to implement it first, and then you can click here to reveal a suggestion in pseudocode.</em></summary>
 ```python
 class UnlimitedSizeArray:
     array = new Array of size 1
@@ -113,13 +113,13 @@ class UnlimitedSizeArray:
         for i in 0 ... array.size()-1:
             array[i] = oldArray[i]
 ```
-</details>
+</details></p>
 
 ## Bonus exercises
 
 ### B1. Implement the programs in A1 and A2.
 
-<details><summary><em>Try to implement it first, and then you can click here to reveal a suggestion in pseudocode.</em></summary>
+<p><details><summary><em>Try to implement it first, and then you can click here to reveal a suggestion in pseudocode.</em></summary>
 ```python
 stack = new Stack()
 for every word in the input stream:
@@ -129,7 +129,7 @@ for every word in the input stream:
         stack.push(word)
 print(stack.size(), "elements left on stack")
 ```
-</details>
+</details></p>
 
 ### B2. Sequence of stack operations
 
@@ -159,7 +159,7 @@ But ***b*** was pushed earlier than ***c*** (because ***b < c***), and therefore
 The important thing to note is that we need to remember the previous list node, because to delete a node we have to redirect the previous node.
 We also have to give some extra thought to the first list element.
 
-<details><summary><em>Click here to show some pseudocode.</em></summary>
+<p><details><summary><em>Click here to show some pseudocode.</em></summary>
 ```python
 previous = null
 current = list.first
@@ -172,11 +172,11 @@ while current is not null:
         previous.next = current.next   # we remove an inner element
     current = current.next
 ```
-</details>
+</details></p>
 
 - **1.3.27**: Loop through the list, keeping the current maximum in a variable.
 
-<details><summary><em>Click here to show some pseudocode.</em></summary>
+<p><details><summary><em>Click here to show some pseudocode.</em></summary>
 ```python
 max = 0
 current : Node = list.first
@@ -185,7 +185,7 @@ while current is not null:
         max = current.item
     current = current.next
 ```
-</details>
+</details></p>
 
 - **1.3.30**: See the exercise in Sedgewick & Wayne for two possible solutions.
 

@@ -29,28 +29,28 @@ Implement the following functions on BSTs:
 
 - `smallest(tree) -> int`: return the smallest value in a BST.
 
-  <details><summary><em>Hint:</em></summary>
+  <p><details><summary><em>Hint:</em></summary>
   Where in a BST is the smallest value?
-  </details>
+  </details></p>
 
 - `delete_minimum(tree) -> BST`: delete the smallest value in a BST.
 
-  <details><summary><em>Hint:</em></summary>
+  <p><details><summary><em>Hint:</em></summary>
   There are two possibilities: either the smallest value is a leaf (which is a straightforward case), or it can be an inner node.
   If it is an inner node, how many children does it have, and what kind of children?
-  </details>
+  </details></p>
 
 - `delete(tree, value) -> BST`: delete a given value in a BST.
 
-  <details><summary><em>Hint:</em></summary>
+  <p><details><summary><em>Hint:</em></summary>
   See the course book and the lecture slides.
-  </details>
+  </details></p>
 
 - `bst_to_list(tree) -> list of int`: return the contents of a BST in sorted order.
   
-  <details><summary><em>Hint:</em></summary>
+  <p><details><summary><em>Hint:</em></summary>
   Make two recursive calls, and then figure out how to combine the results.
-  </details>
+  </details></p>
 
 You can implement in pseudocode or Java or Python, it's up to you.
 
@@ -74,9 +74,9 @@ Each operation takes two sets s<sub>1</sub> and s<sub>2</sub>, and stores the un
 Suppose that `Set` is implemented using a balanced BST.
 Show how to implement `intersection` and `difference` so that their runtime is *O(n log(m))*, where *n* is the size of the *smaller* of the two sets `this` and `other`, and *m* is the size of the *larger* set.
 
-- <details><summary><em>Hint:</em></summary>
+- <p><details><summary><em>Hint:</em></summary>
   First check which of the sets is larger, then write code for that particular case.
-  </details>
+  </details></p>
 
 **A5**.
 Consider the following algorithm for sorting a list of keys:
@@ -99,9 +99,9 @@ Answer the following questions:
 Design a data structure representing a *multiset*: a set that can contain duplicates.
 It's up to you what operations your data structure should support.
 
-- <details><summary><em>Hint:</em></summary>
+- <p><details><summary><em>Hint:</em></summary>
   Use a map; you do not need to implement the map but can just use an existing implementation.
-  </details>
+  </details></p>
 
 Also design a data structure representing a *multimap*: a symbol table (map) where each key can be associated with multiple values.
 
@@ -111,11 +111,11 @@ Also design a data structure representing a *multimap*: a symbol table (map) whe
 Describe an algorithm that finds the *successor* of a key in a BST: the key that comes directly after it in sorted order.
 The runtime should be proportional to the height of the BST.
 
-- <details><summary><em>Hint:</em></summary>
+- <p><details><summary><em>Hint:</em></summary>
 
   Make the algorithm return *null* if the key is the largest one.
   The algorithm is recursive (similar to the search algorithm) but there are extra cases depending on whether each recursive call returns *null* or not.
-  </details>
+  </details></p>
 
 **Harder:**
 Design an algorithm that, given a BST and two keys x and y, finds all keys between x and y in the BST (for example, returning them in a queue).
@@ -142,11 +142,10 @@ Design a data structure representing a *bidirectional map*: a symbol table where
 In addition to the usual symbol table operations it should provide a "reverse lookup" operation which takes a value and finds the corresponding key efficiently).
 When inserting a key-value pair, any conflicting key-value pair should be removed.
 
-- <details><summary><em>Hint:</em></summary>
-
+- <p><details><summary><em>Hint:</em></summary>
   Use two balanced BSTs.
   The code for adding a new key-value pair is a little tricky, so make sure to write down an invariant relating the two BSTs.
-  </details>
+  </details></p>
 
 **B4**.
 Suppose that we have a binary search tree where each node also contains a reference to its parent node.

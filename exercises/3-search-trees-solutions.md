@@ -85,7 +85,7 @@ Here are some possible operations:
 - Set-like operations, such as union and intersection.
   Typically for multisets we say e.g. that if *S* contains *m* copies of a key *x*, and *T* contains *n* copies of *x*, then *S* ∪ *T* should contain *m+n* copies of *x*.
 
-  - <details><summary><em>Click here to see a sketch of an implmeentation that does this:</em></summary>
+  - <p><details><summary><em>Click here to see a sketch of an implmeentation that does this:</em></summary>
 
     ```python
     union(other):
@@ -94,7 +94,7 @@ Here are some possible operations:
                 this.put(key, 0)
         this.put(key, this.get(key) + other.get(key)
     ```
-    </details>
+    </details></p>
 
 **For a multimap**: use a balanced BST where the values are sets.
 Possible extra operations include:
@@ -106,7 +106,7 @@ Possible extra operations include:
 - `contains(x, v) -> boolean`: check if a given key-value pair is in the multimap.
   (Implementation: look up the key in the BST to get a set of values, look up the value in that set.)
 
-<details><summary><em>Click here to see a more detailed implementation for multisets:</em></summary>
+<p><details><summary><em>Click here to see a more detailed implementation for multisets:</em></summary>
 
 ```python
 class Multiset:
@@ -139,7 +139,7 @@ class Multiset:
 
     # plus code for "union" from above
 ```
-</details>
+</details><p>
 
 ## Bonus exercises
 

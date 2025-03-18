@@ -121,9 +121,9 @@ Draw all the nonisomorphic graphs with *four* vertices.
 - [a] Prove that every connected graph has a vertex whose removal (including all adjacent edges) will not disconnect the graph.
 - [b] Write a DFS method that finds such a vertex.
 
-  <details><summary><em>Hint:</em></summary>
+  <p><details><summary><em>Hint:</em></summary>
   Consider a vertex whose adjacent vertices are all marked.
-  </details>
+  </details></p>
 
 **E3** [S&W 4.1.16].
 The *eccentricity* of a vertex *v* is the length of the shortest path from that vertex to the furthest vertex from *v*.
@@ -164,9 +164,9 @@ Consider the graphs defined by the following four sets of edges:
 **F2** [S&W 4.2.33, *unique topological ordering*].
 Design an algorithm to determine whether a DAG has a unique topological ordering.
 
-<details><summary><em>Hint:</em></summary>
+<p><details><summary><em>Hint:</em></summary>
 A DAG has a unique topological ordering if and only if there is a directed edge between each pair of consecutive vertices in the topological order (i.e., the digraph has a Hamiltonian path). If the DAG has multiple topological orderings, then a second topological order can be obtained by swapping a pair of consecutive vertices.
-</details>
+</details></p>
 
 
 ### Minimum spanning trees (G)
