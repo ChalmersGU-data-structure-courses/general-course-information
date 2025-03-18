@@ -1,5 +1,12 @@
 # Written examination
 
+Upcoming exam dates:
+- 2025 June 5, 14–18
+- 2025 August 21, 14–18
+- 2025 end of October (date not decided yet)
+
+## Topics
+
 There is a [long list of topics](exam-topics.md) you should know for the exam.
 
 ## Allowed aids

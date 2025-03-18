@@ -58,13 +58,9 @@ More information:
 
 ### Written examination
 
-- Information about [the exam and how the grade is calculated](exam-info.md).
+- [Information about the exam](exam-info.md) (including upcoming dates).
 - Detailed list of [what topics you should know for the exam](exam-topics.md).
 - A repository of [past exams](https://github.com/ChalmersGU-data-structure-courses/past-exams).
-
-Upcoming exam dates:
-- 2024: 11 January, 12 March, 30 May, 22 August, 27 October
-- 2025: 16 January, 5 June, 21 August, end of October (date not decided yet)
 
 ### Passing the course
 
