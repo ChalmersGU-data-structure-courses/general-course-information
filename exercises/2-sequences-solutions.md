@@ -150,7 +150,7 @@ But ***b*** was pushed earlier than ***c*** (because ***b < c***), and therefore
 
 **Heading "Exercises" on the book website**: <https://algs4.cs.princeton.edu/13stacks/>
 
-- **4 + 6**: See the book website.
+- **6**: See the book website.
 
 **Heading "Web Exercises" on the book website**: <https://algs4.cs.princeton.edu/13stacks/>
 

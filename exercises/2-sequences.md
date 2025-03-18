@@ -84,10 +84,6 @@ Note that some of them (but not all) have solutions or hints on the book website
 
 **Heading "Exercises" on the Sedgewick & Wayne website**: <https://algs4.cs.princeton.edu/13stacks/>
 
-- **4**:
-  Write a stack client that reads in sequence of left and right parentheses, braces, and brackets from standard input and uses a stack to determine whether the sequence is properly balanced.
-  For example, your program should print **true** for `[()]{}{[()()]()}` and **false** for `[(])`.
-
 - **6**: What does the following code fragment do to the queue `q`?
 
     ```python
