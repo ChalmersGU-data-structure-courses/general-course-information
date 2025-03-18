@@ -82,13 +82,13 @@ So we take their average for the next guess!
 The symbol `|` indicates the boundary between the sorted and unsorted parts of the array.
 
 ```
-4 | 6 8 2 9 5 1 - now insert 6
-4 6 | 8 2 9 5 1 - now insert 8
-4 6 8 | 2 9 5 1 - now insert 2
-2 4 6 8 | 9 5 1 - now insert 9
-2 4 6 8 9 | 5 1 - now insert 5
-2 4 5 6 8 9 | 1 - now insert 1
-1 2 4 5 6 8 9
+4|6 8 2 9 5 1 - now insert 6
+4 6|8 2 9 5 1 - now insert 8
+4 6 8|2 9 5 1 - now insert 2
+2 4 6 8|9 5 1 - now insert 9
+2 4 6 8 9|5 1 - now insert 5
+2 4 5 6 8 9|1 - now insert 1
+1 2 4 5 6 8 9|
 ```
 
 #### Quicksort, using median-of-three
@@ -98,7 +98,7 @@ The symbol `|` indicates the boundary between the sorted and unsorted parts of t
 First, partition the array:
 
 ```
-4 6 8 2 9 5 1 - pivot is 2, swap with 4
+4 6 8 2 9 5 1 - pivot is 2 (median of 4, 2, 1), swap with 4
 ^     ^     ^
 
 2 6 8 4 9 5 1 - swap 1 and 6
@@ -119,10 +119,10 @@ The left partition `{1}` is a base case.
 Here is what happens with the right partition `{8,4,9,5,6}` (`|` indicates the part of the array we are sorting):
 
 ```
-1 2 | 8 4 9 5 6 - pivot is 8
+1 2|8 4 9 5 6 - pivot is 8
       ^   ^   ^
 
-1 2 | 8 4 9 5 6 - move lo right
+1 2|8 4 9 5 6 - move lo right
         lo    hi
 
 1 2 | 8 4 9 5 6 - swap lo and hi
@@ -297,7 +297,7 @@ Sort the letters in each word in ascending order.
 If the words are anagrams, sorting them should give the same string.
 For example, "silent" is an anagram of "listen" because sorting the letters of either of them gives "eilnst".
 
-#### b) Write a program that reads in a list of words and efficiently finds all anagrams.
+#### b) Write a program that reads in a list of words and efficiently finds all anagrams of a given word in that list.
 
 Define a function `anagramForm(word)` which returns the letters of the given `word` in alphabetical order.
 For example, `anagramForm("listen") == "eilnst"`.

@@ -6,7 +6,7 @@ Here are suggested solutions to some of the exercises about stacks, queues and l
 
 ### A1 + A2. What is the result of running the stack/queue program on the following input: `it was - the best - of times - - - it was - the - -`?
 
-See the solution to question **B1** below and then run it for yourself:)
+See the solution to question **B1** below and then run it for yourself :).
 
 ### A3. Give an algorithm that removes all comments from a program.
 
@@ -14,6 +14,7 @@ The idea is to go through the program and use a counter to track how deeply nest
 This counter behaves like a stack where we don't care about the elements, only the size (instead of push/pop, we increment/decrement).
 
 <p><details><summary><em>Try to implement it first, and then you can click here to reveal a solution in pseudocode.</em></summary>
+
 ```python
 comments = 0
 for each character in program:
@@ -54,6 +55,7 @@ The main idea can be summarised as follows:
 Solution:
 
 <p><details><summary><em>Try to implement it first, and then you can click here to reveal a solution in pseudocode.</em></summary>
+
 ```python
 stack = new Stack()
 for each token in the input stream:
@@ -83,6 +85,7 @@ So if you enqueue the numbers 0 to 9, then the only sequence that can occur is 0
 This is a variant of a dynamic array.
 
 <p><details><summary><em>Try to implement it first, and then you can click here to reveal a suggestion in pseudocode.</em></summary>
+
 ```python
 class UnlimitedSizeArray:
     array = new Array of size 1
@@ -120,6 +123,7 @@ class UnlimitedSizeArray:
 ### B1. Implement the programs in A1 and A2.
 
 <p><details><summary><em>Try to implement it first, and then you can click here to reveal a suggestion in pseudocode.</em></summary>
+
 ```python
 stack = new Stack()
 for every word in the input stream:
@@ -160,6 +164,7 @@ The important thing to note is that we need to remember the previous list node, 
 We also have to give some extra thought to the first list element.
 
 <p><details><summary><em>Click here to show some pseudocode.</em></summary>
+
 ```python
 previous = null
 current = list.first
@@ -177,6 +182,7 @@ while current is not null:
 - **1.3.27**: Loop through the list, keeping the current maximum in a variable.
 
 <p><details><summary><em>Click here to show some pseudocode.</em></summary>
+
 ```python
 max = 0
 current : Node = list.first

@@ -81,7 +81,7 @@ How can you use sorting to check if two words are anagrams of one another?
 You will need to sort the array in an order which makes all anagrams appear next to each other.
 </details></p>
 
-**Harder:** write a program that reads in a list of words and efficiently finds all anagrams.
+**Harder:** write a program that reads in a list of words and efficiently finds all anagrams of a given word in that list.
 
 ## Extreme exercises
 
