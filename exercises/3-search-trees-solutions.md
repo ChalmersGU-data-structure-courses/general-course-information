@@ -139,7 +139,7 @@ class Multiset:
 
     # plus code for "union" from above
 ```
-</details><p>
+</details></p>
 
 ## Bonus exercises
 
