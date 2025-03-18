@@ -1,9 +1,9 @@
 # Written examination
 
 Upcoming exam dates:
-- 2025 June 5, 14–18
-- 2025 August 21, 14–18
-- 2025 end of October (date not decided yet)
+- 2025 June 5, 14–18,
+- 2025 August 21, 14–18,
+- 2025 end of October (date not decided yet).
 
 Remember to sign up on Ladok a month in advance!
 
