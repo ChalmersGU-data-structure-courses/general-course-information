@@ -91,7 +91,7 @@ Note: The academic year is divided into four study periods (läsperioder, LP), w
 ### LP4, DIT183+DAT495
 - Both Chalmers and GU students
 - Compulsory in the GU program N1SOF, and in Chalmers program TIDAL
-- Given at the Lindholmen campus (spring 2025)
+- Given at the Lindholmen campus
 - Course responsible: Christian Sattler
 
 ### LP4, DIT962
