@@ -4,7 +4,10 @@
 
 The main course book is [our adaptation of the OpenDSA interactive course book](https://chalmersgu-data-structure-courses.github.io/dsabook/).
 
-For doing the labs you will want to look up the [Java collections library documentation](https://docs.oracle.com/en/java/javase/17/docs/api/index.html), or the [Python documentation](https://docs.python.org/).
+For doing the labs you will want to look up the library documentations for [Java](https://docs.oracle.com/en/java/javase/17/docs/api/index.html) or [Python](https://docs.python.org/3/library/index.html).
+
+We also have a [review of the programming and maths background](https://chalmersgu-data-structure-courses.github.io/OpenDSA/Published/ChalmersGU-Repetition/html/) required by the course.
+If you are not familiar with recursion, we recommend doing the [recursion practice](https://chalmersgu-data-structure-courses.github.io/OpenDSA/Published/ChalmersGU-Repetition/html/index.html#recursion) (with interactive exercises).
 
 ## Interactive visualisation tools
 
