@@ -45,7 +45,7 @@ Then we have:
 - **g2**.
   We have T(0) = 0 and T(n + 1) = T(n) + n.
   An exact solution is T(n) = n(n+1)/2 (proved by induction), so T(n) ∈ O(n<sup>2</sup>) (quadratic complexity).
-  Alternatively, one can reason T(n) = 1 + 2 + … + n ≤ n ∙ n = n<sup>2</sub> ∈ O(n<sup>2</sup>).
+  Alternatively, one can reason T(n) = 1 + 2 + … + n ≤ n ∙ n = n<sup>2</sup> ∈ O(n<sup>2</sup>).
   This is sharp because T(n) = 1 + 2 + … + n ≥ ⌈(n+1)/2⌉ + … + n ≥ n/2 ∙ n/2 = 1/4 n<sup>2</sup>.
 
   - *Note*.
@@ -61,7 +61,7 @@ Then we have:
 - **g4**.
   This is the skeleton of [quick select](https://en.wikipedia.org/wiki/Quickselect).
   We have T(1) = 1 and T(n) = n + T(n/2) for n > 1.
-  For n = 2<sup>m</sub>, we have T(2<sup>m</sup>) = 2<sup>m</sup> + T(2<sup>m–1</sup>) = 2<sup>m</sup> + 2<sup>m–1</sup> + T(2<sup>m–2</sup>) = … = 2<sup>m</sup> + … + 2 + 1 + T(1) = 2<sup>m+</sup> (by induction or the formula for geometric sums), that is, T(n) = n.
+  For n = 2<sup>m</sup>, we have T(2<sup>m</sup>) = 2<sup>m</sup> + T(2<sup>m–1</sup>) = 2<sup>m</sup> + 2<sup>m–1</sup> + T(2<sup>m–2</sup>) = … = 2<sup>m</sup> + … + 2 + 1 + T(1) = 2<sup>m+</sup> (by induction or the formula for geometric sums), that is, T(n) = n.
   For the general case, let n' be the largest power of 2 bounded by n.
   T is increasing, so we have T(n') ≤ T(n) ≤ T(2n'), so n/2 ≤ T(n) ≤ 2n, which gives T(n) ∈ O(n) (linear complexity) strictly.
 
