@@ -12,9 +12,9 @@ We recommend you try all the core exercises. Try some of the bonus exercises if 
 **A1**.
 Adapt binary search so that it works on arrays that are sorted in *descending* instead of ascending order.
 
-<p><details><summary><em>Hint:</em></summary>
+<details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Hint:*</summary>
 First write down an example array and try to do the binary search "by hand". Then figure out what rules you followed.
-</details></p>
+</details>
 
 **A2**.
 The *integer square root* of a natural number *n* is the largest natural number *m* such that *m<sup>2</sup> ≤ n*.
@@ -47,9 +47,9 @@ Your program makes another guess and so on until it gets the right number.
 
 **Harder:** extend your program so that I can pick any positive number, not just ones up to 10000.
 
-<p><details><summary><em>Hint:</em></summary>
+<details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Hint:*</summary>
 First try to find a number which is bigger than mine.
-</details></p>
+</details>
 
 **B2**.
 Write programs (in code or pseudocode) that use sorting to solve the following problems:
@@ -77,9 +77,9 @@ Suppose that you want to sort the books on your bookshelf, say into alphabetical
 **B5**.
 How can you use sorting to check if two words are anagrams of one another?
 
-<p><details><summary><em>Hint:</em></summary>
+<details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Hint:*</summary>
 You will need to sort the array in an order which makes all anagrams appear next to each other.
-</details></p>
+</details>
 
 **Harder:** write a program that reads in a list of words and efficiently finds all anagrams of a given word in that list.
 
@@ -104,6 +104,6 @@ But you can guess wrong at most three times!
 - If *n* = 100, how many guesses do you need to find the answer?
 - What's the largest *n* for which you can find the answer with 10 guesses?
 
-<p><details><summary><em>Hint:</em></summary>
+<details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Hint:*</summary>
 First try to solve it with three times replaced by two times (or even just one time).
-</details></p>
+</details>

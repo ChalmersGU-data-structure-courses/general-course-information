@@ -85,16 +85,15 @@ Here are some possible operations:
 - Set-like operations, such as union and intersection.
   Typically for multisets we say e.g. that if *S* contains *m* copies of a key *x*, and *T* contains *n* copies of *x*, then *S* ∪ *T* should contain *m+n* copies of *x*.
 
-  - <p><details><summary><em>Click here to see a sketch of an implmeentation that does this:</em></summary>
-
-    ```python
-    union(other):
-        for key in other.keys():
-            if not this.contains(key):
-                this.put(key, 0)
-        this.put(key, this.get(key) + other.get(key)
-    ```
-    </details></p>
+  <details markdown=block markdown=block style="margin-bottom: 16px"><summary markdown=span>*Click here to see a sketch of an implmeentation that does this:*</summary>
+  ```python
+  union(other):
+      for key in other.keys():
+          if not this.contains(key):
+              this.put(key, 0)
+      this.put(key, this.get(key) + other.get(key)
+  ```
+  </details>
 
 **For a multimap**: use a balanced BST where the values are sets.
 Possible extra operations include:
@@ -106,8 +105,7 @@ Possible extra operations include:
 - `contains(x, v) -> boolean`: check if a given key-value pair is in the multimap.
   (Implementation: look up the key in the BST to get a set of values, look up the value in that set.)
 
-<p><details><summary><em>Click here to see a more detailed implementation for multisets:</em></summary>
-
+<details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Click here to see a more detailed implementation for multisets:*</summary>
 ```python
 class Multiset:
     # e.g. using a map implemented using an AVL tree
@@ -139,7 +137,7 @@ class Multiset:
 
     # plus code for "union" from above
 ```
-</details></p>
+</details>
 
 ## Bonus exercises
 

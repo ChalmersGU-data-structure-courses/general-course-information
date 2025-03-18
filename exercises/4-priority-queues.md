@@ -23,9 +23,9 @@ Why can a priority queue not be used to implement a double-ended queue?
 Write in pseudocode an algorithm for checking that a binary tree satisfies the heap property.
 Now write the same algorithm but for a heap represented as an array.
 
-<p><details><summary><em>Hint:</em></summary>
+<details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Hint:*</summary>
 Be careful to handle the case where a node has only a left child!
-</details></p>
+</details>
 
 **A4**.
 Design an algorithm that takes an array of numbers, and prints out the largest k numbers in the array, in ascending order.
@@ -52,16 +52,16 @@ Design a data structure that supports the following operations:
 
 Finding the median should take O(1) time, and the other two operations should take O(log(n)) time.
 
-<p><details><summary><em>Hint:</em></summary>
+<details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Hint:*</summary>
 Use two priority queues.
-</details></p>
+</details>
 
 **B2**.
 Show how to define a priority queue where `max` takes constant time and `add` and `removeMax` take logarithmic time, *with the help of a red-black BST.*
 
-<p><details><summary><em>Hint:</em></summary>
+<details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Hint:*</summary>
 Use the BST to store the priority queue but also remember the maximum value.
-</details></p>
+</details>
 
 **B3**.
 Suppose you want a data structure with only the operations `insert` and `getMin`.

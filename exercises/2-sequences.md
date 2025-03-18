@@ -54,14 +54,14 @@ It should support the following operations:
 
 - `set(index, value)`: modify the element at a given index.
 
-<p><details><summary><em>Hint:</em></summary>
+<details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Hint:*</summary>
 To implement the data structure, use a normal array but automatically grow it when necessary.
 Use the array-doubling trick to ensure good performance.
-</details></p>
+</details>
 
-<p><details><summary><em>Hint:</em></summary>
+<details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Hint:*</summary>
 Note that in `set(...)`, if the index is much bigger than the current size of the array, you may have to double the size more than once.
-</details></p>
+</details>
 
 ## Bonus exercises
 
@@ -99,18 +99,18 @@ Note that some of them (but not all) have solutions or hints on the book website
 - **31**: *Queue with two stacks*.
   Implement a queue with two stacks so that each queue operations takes a constant amortized number of stack operations.
 
-  <p><details><summary><em>Hint:</em></summary>
+  <details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Hint:*</summary>
   If you push elements onto a stack and then pop them all, they appear in reverse order.
   If you repeat this process, they're now back in order.
-  </details></p>
+  </details>
 
 - **33**: *Stack with a queue*.
   Implement a stack with a single queue so that each stack operations takes a linear number of queue operations.
 
-  <p><details><summary><em>Hint:</em></summary>
+  <details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Hint:*</summary>
   To delete an item, get all of the elements on the queue one at a time, and put them at the end, except for the last one which you should delete and return.
   (Note that this is a very inefficient solution.)
-  </details></p>
+  </details>
 
 **Linked list exercises from Sedgewick & Wayne**
 

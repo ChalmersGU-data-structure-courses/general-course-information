@@ -95,14 +95,13 @@ Strictly speaking, we should use an array with an extra index representing the f
 
 We use a class with these fields:
 
-1) a *max-heap* containing the median and all items smaller than the median,
-2) a *min-heap* containing all items larger than the median.
+- a *max-heap* containing the median and all items smaller than the median,
+- a *min-heap* containing all items larger than the median.
 
 The median is the maximum element of the max-heap.
 The two heaps must always have the same size (give or take one element – we allow the max-heap to be one bigger than the min-heap – this will happen if the collection has an odd number of items, and the median is then the maximum element of the max-heap).
 
-<p><details><summary><em>Click here to see a more detailed implementation for multisets:</em></summary>
-
+<details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Click here to see a more detailed implementation for multisets:*</summary>
 ```python
 class MedianCollection
     // Contains the median and all items less than the median.
@@ -137,7 +136,7 @@ class MedianCollection
             firstHalf.add(secondHalf.removeMin())
         return median
 ```
-</details></p>
+</details>
 
 ### B2. Implement a priority queue using a red-black BST
 
