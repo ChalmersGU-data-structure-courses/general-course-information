@@ -45,8 +45,8 @@ Then we have:
 - **g2**.
   We have T(0) = 0 and T(n + 1) = T(n) + n.
   An exact solution is T(n) = n(n+1)/2 (proved by induction), so T(n) ∈ O(n<sup>2</sup>) (quadratic complexity).
-  Alternatively, one can reason T(n) = 1 + 2 + … + n ≤ n ∙ n = n<sup>2</sub> ∈ O(n<sup>2</sub>).
-  This is sharp because T(n) = 1 + 2 + … + n ≥ ⌈(n+1)/2⌉ + … + n ≥ n/2 ∙ n/2 = 1/4 n<sup>2</sub>.
+  Alternatively, one can reason T(n) = 1 + 2 + … + n ≤ n ∙ n = n<sup>2</sub> ∈ O(n<sup>2</sup>).
+  This is sharp because T(n) = 1 + 2 + … + n ≥ ⌈(n+1)/2⌉ + … + n ≥ n/2 ∙ n/2 = 1/4 n<sup>2</sup>.
 
   - *Note*.
     This is a useful strategy for all sorts of sums of increasing terms:
@@ -61,17 +61,17 @@ Then we have:
 - **g4**.
   This is the skeleton of [quick select](https://en.wikipedia.org/wiki/Quickselect).
   We have T(1) = 1 and T(n) = n + T(n/2) for n > 1.
-  For n = 2<sup>m</sub>, we have T(2<sup>m</sub>) = 2<sup>m</sub> + T(2<sup>m–1</sub>) = 2<sup>m</sub> + 2<sup>m–1</sub> + T(2<sup>m–2</sub>) = … = 2<sup>m</sub> + … + 2 + 1 + T(1) = 2<sup>m+</sub> (by induction or the formula for geometric sums), that is, T(n) = n.
+  For n = 2<sup>m</sub>, we have T(2<sup>m</sup>) = 2<sup>m</sup> + T(2<sup>m–1</sup>) = 2<sup>m</sup> + 2<sup>m–1</sup> + T(2<sup>m–2</sup>) = … = 2<sup>m</sup> + … + 2 + 1 + T(1) = 2<sup>m+</sup> (by induction or the formula for geometric sums), that is, T(n) = n.
   For the general case, let n' be the largest power of 2 bounded by n.
   T is increasing, so we have T(n') ≤ T(n) ≤ T(2n'), so n/2 ≤ T(n) ≤ 2n, which gives T(n) ∈ O(n) (linear complexity) strictly.
 
 - **g5**.
-  We have T(0) = 1 and T(n + 1) = 2 T(n), so by induction we have T(n) = 2<sup>n</sub> ∈ O(2<sup>n</sub>) (exponential complexity with base 2).
+  We have T(0) = 1 and T(n + 1) = 2 T(n), so by induction we have T(n) = 2<sup>n</sup> ∈ O(2<sup>n</sup>) (exponential complexity with base 2).
 
 - **g6**.
   This is the skeleton of merge sort.
   We have T(1) = 1 and T(n) = n + 2 T(n/2) for n > 1.
-  For n = 2<sup>m</sub>, we have T(2<sup>m</sub>) = 2<sup>m</sub> + 2T(2<sup>m–1</sub>) = 2<sup>m</sub> + 2<sup>m</sub> + 4T(2<sup>m–2</sub>) = … = 2<sup>m</sub> + … + 2<sup>m</sub> + 2<sup>m</sub> T(1) = 2<sup>m</sub> ∙ (m + 1), that is, T(n) = n (log<sub>2</sub>(n) + 1).
+  For n = 2<sup>m</sup>, we have T(2<sup>m</sup>) = 2<sup>m</sup> + 2T(2<sup>m–1</sup>) = 2<sup>m</sup> + 2<sup>m</sup> + 4T(2<sup>m–2</sup>) = … = 2<sup>m</sup> + … + 2<sup>m</sup> + 2<sup>m</sup> T(1) = 2<sup>m</sup> ∙ (m + 1), that is, T(n) = n (log<sub>2</sup>(n) + 1).
   For the general case, let n' be the largest power of 2 bounded by n. T is increasing, so we have T(n') ≤ T(n) ≤ T(2n'), so n/2 (log<sub>2</sub>(n/2) + 1) ≤ T(n) ≤ 2n (log<sub>2</sub>(2n) + 1), which is n/2 log<sub>2</sub>(n) ≤ T(n) ≤ 2n (log<sub>2</sub>(n) + 2), which gives T(n) ∈ O(n log(n)) strictly.
 
 
@@ -102,13 +102,13 @@ Some of the problems have answers or hints on the website, otherwise you're on y
 ### C4. Preorder
 
 Reflexivity (f(n) ∈ O(n)) holds trivially: we have f(n) ≤ 1 ∙ f(n) for n ≥ 1.
-For transitivity, if f(n) is bounded by C g(n) for n ≥ n0 and g(n) is bounded by D h(n) for n ≥ n1, then f(n) is bounded by CD h(n) for n ≥ max(n0, n1).
+For transitivity, if f(n) is bounded by C g(n) for n ≥ n₀ and g(n) is bounded by D h(n) for n ≥ n₁, then f(n) is bounded by CD h(n) for n ≥ max(n₀, n₁).
 Thus, the relation defined by O forms a preorder (called the order-of-growth order).
 
 If O(f(n)) ⊆ O(g(n)), then f(n) ∈ O(g(n)) follows from reflexivity (f(n) ∈ O(n)).
 Conversely, if f(n) ∈ O(g(n)), then O(f(n)) ⊆ O(g(n)) follows using transitivity established above.
 
-Let us construct f, g : ℕ → ℝ>0 such that neither f(n) ∈ O(g(n)) nor g(n) ∈ O(f(n)). There are many possible ideas, one is the following:
+Let us construct f, g : ℕ → ℝ<sub>>0</sub> such that neither f(n) ∈ O(g(n)) nor g(n) ∈ O(f(n)). There are many possible ideas, one is the following:
 - f(n) = n and g(n) = 1 for n even,
 - f(n) = 1 and f(n) = n for n odd.
 
@@ -131,4 +131,4 @@ Since f is increasing, we have
 
 - f(n) ≤ f(2<sup>⌈log<sub>2</sub> n⌉</sup>) ≤ C<sup>⌈log<sub>2</sub> n⌉</sup> f(1) = O(C<sup>log<sub>2</sub> n</sup>) = O(n<sup>log<sub>2</sub> C</sup>)
 
-So f ∈ O(n<sup>k</sub>) for k = log<sub>2</sub>(C).
+So f ∈ O(n<sup>k</sup>) for k = log<sub>2</sub>(C).

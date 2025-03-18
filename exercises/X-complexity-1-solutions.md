@@ -40,8 +40,8 @@ Here are suggested solutions to the exercises about complexity, part A.
   In total, this increases the result by 1 + 2 + … + *n* = (*n*+1)/2 + (*n*+1)/2 + … + (*n*+1)/2 = *n*(*n*+1)/2.
   Thus, T(*n*) = *n*(*n*+1)/2 ∈ O(*n*<sup>2</sup>) (quadratic complexity).
 
-  - *Note*.
-    The complexity of the sum 1 + 2 + … + *n* can be determined without knowing the closed formula for it: T(*n*) = 1 + 2 + … + *n* ≤ *n* ∙ *n* = *n*<sup>2</sup> ∈ O(*n*<sup>2</sup>).
+  **Note**:
+  The complexity of the sum 1 + 2 + … + *n* can be determined without knowing the closed formula for it: T(*n*) = 1 + 2 + … + *n* ≤ *n* ∙ *n* = *n*<sup>2</sup> ∈ O(*n*<sup>2</sup>).
 
 - **f4**.
   The outer loop runs ⌊*n*/4⌋ times.
