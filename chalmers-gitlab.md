@@ -25,9 +25,7 @@ You can change this by [adding an email address](https://git.chalmers.se/-/profi
 
 ### Setting up SSH and Git for Chalmers GitLab
 
-Before proceeding, must **set up SSH and Git** on your computer and **configure an SSH key** on Chalmers GitLab.
-We have a [dedicated tutorial](setup-ssh-and-git.md) for that.
-
+Follow our [dedicated tutorial](setup-ssh-and-git.md) to **set up SSH and Git** on your computer and **configure an SSH key** on Chalmers GitLab.
 
 ## Setting up a lab
 
