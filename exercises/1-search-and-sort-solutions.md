@@ -119,24 +119,24 @@ The left partition `{1}` is a base case.
 Here is what happens with the right partition `{8,4,9,5,6}` (`|` indicates the part of the array we are sorting):
 
 ```
-1 2|8 4 9 5 6 - pivot is 8
-      ^   ^   ^
+1 2|8 4 9 5 6 - pivot is 8 (median of 8, 9, 6), swap with 8 does nothing
+    ^   ^   ^
 
 1 2|8 4 9 5 6 - move lo right
-        lo    hi
+      lo    hi
 
-1 2 | 8 4 9 5 6 - swap lo and hi
-          lo  hi
+1 2|8 4 9 5 6 - swap lo and hi
+        lo  hi
 
-1 2 | 8 4 6 5 9 - lo moves right one step
-            lo
-            hi
+1 2|8 4 6 5 9 - lo moves right one step
+          lo
+          hi
 
-1 2 | 8 4 6 5  9 - now swap 5 with pivot
-            hi lo
+1 2|8 4 6 5  9 - now swap 5 with pivot
+          hi lo
 
-1 2 | 5 4 6 8 9
-      -----   -
+1 2|5 4 6 8 9
+    -----   -
 ```
 
 Finally, we make two recursive calls, one to sort `{5,4,6}` and one to sort `{9}`.
