@@ -3,7 +3,7 @@
 [Chalmers GitLab](https://git.chalmers.se/dashboard/projects) (git.chalmers.se) is a service to host Git projects within Chalmers.
 To sign in, use **Chalmers Login** (ignore the username/password fields):
 
-![Signing in to Chalmers GitLab](img/chalmers-gitlab-sign-in.png)
+<p align="center"><img src="img/chalmers-gitlab-sign-in.png"></p>
 
 You will see all your current projects.
 If a lab project is missing, it could be because:
@@ -51,7 +51,7 @@ Here is how to do it using a terminal:
 1.  Go to the lab repository in your browswer.
     In the top there is a menu, click on *Code*:
 
-    ![chalmers-gitlab-clone-ssh.png](img/chalmers-gitlab-clone-ssh.png)
+    <p align="center"><img src="img/chalmers-gitlab-clone-ssh.png"></p>
 
     Copy the SSH URL by clicking the marked button.
 
@@ -62,7 +62,7 @@ Here is how to do it using a terminal:
 
 If you are using [VSCode](https://git.chalmers.se/help/topics/git/clone.md#clone-and-open-in-visual-studio-code) or [IntelliJ](https://git.chalmers.se/help/topics/git/clone.md#clone-and-open-in-intellij-idea), you can also clone directly from the GitLab project page:
 
-![chalmers-gitlab-clone-IDE.png](img/chalmers-gitlab-clone-IDE.png)
+<p align="center"><img src="img/chalmers-gitlab-clone-IDE.png"></p>
 
 **Note**:
 If you use the Chalmers lab computers, you may experience a problem with git cloning.
@@ -135,13 +135,13 @@ This limitation is to prevent test spamming and encourage you to think instead.
 We use the **tags** feature of git for lab submission.
 When you are ready to submit, go to your project page on GitLab and create a tag:
 
-![create-tag.png](img/create-tag.png)
+<p align="center"><img src="img/create-tag.png"></p>
 
 The name of a **submission tag** must start with `submission` (make sure to spell correctly).
 If you want to be nice, add a number (0, 1, 2, …) to indicate your submission attempt.
 Example:
 
-![create-tag-details.png](img/create-tag-details.png)
+<p align="center"><img src="img/create-tag-details.png"></p>
 
 You can write a submission comment in the message field.
 
@@ -161,7 +161,7 @@ If you create the tag locally and then push, make sure to **push tags** (in the 
 You can check your submission by clicking on ***Code → Tags*** in the Project menu on the left.
 The submission tag(s) should be highlighted as <span style="background-color: #ddd; padding: 0 7px 2px; border-radius: 10px">protected</span>:
 
-![show-tags.png](img/show-tags.png)
+<p align="center"><img src="img/show-tags.png"></p>
 
 ### Getting feedback
 
