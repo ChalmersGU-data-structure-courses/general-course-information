@@ -58,7 +58,7 @@ Here is how to do it using a terminal:
 2.  Navigate to your personal data structures folder (as described above): `cd ...\school\data-structures`
 
 3.  [Clone with SSH](https://git.chalmers.se/help/topics/git/clone.md#clone-with-ssh):
-    Write `git clone <pasted SSH URL>` with the SSH URL you copied.
+    Run `git clone <pasted SSH URL>` with the SSH URL you copied.
 
 If you are using [VSCode](https://git.chalmers.se/help/topics/git/clone.md#clone-and-open-in-visual-studio-code) or [IntelliJ](https://git.chalmers.se/help/topics/git/clone.md#clone-and-open-in-intellij-idea), you can also clone directly from the GitLab project page:
 
