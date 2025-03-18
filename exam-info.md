@@ -10,17 +10,25 @@ It can contain anything you want, though a summary of the course material is a p
 The sheet ***must be handed in with the exam***, but only for the purpose of determining if it adheres to the rules (and to make grading more entertaining, the sheets are sometimes quite the works of art).
 You can get the sheet back afterwards if you need it for a re-exam or want to frame it and hang it on your wall.
 
-## Grading
+## Format
 
 There are 6 basic questions and 3 advanced questions.
-The basic questions are graded either correct or incorrect, while the advanced questions are awarded 0, 1 or 2 points each.
+* Each basic question is graded either correct or incorrect.
+* Each advanced questions is awarded up to two points.
 
-We use the following very complicated formula to calculate your final grade, where `basic` and `advanced` are integers ≤6:
+We do not give fractional points.
+
+## Grading
+
+Your grade (U/3/4/5) is calculated according to the following very complicated formula:
 
 ```python
-def grade(basic, advanced):
+def grade(
+    basic,    # number of basic questions answered correctly
+    advanced, # advanced points obtained
+):
     if basic < 5:
-        return None  # Sorry, try again next time
+        return 'U'  # sorry, try again next time
     else:
         return 3 + advanced // 2
 ```
@@ -32,3 +40,10 @@ Or, formulated differently:
 - To get grade 5, you must also be awarded at least 4 points for the advanced questions.
 
 (If your course uses the G/VG grading scale, then you need 3 advanced points to get a VG.)
+
+## Past exams
+
+We have a repository of [past exams](https://github.com/ChalmersGU-data-structure-courses/past-exams) that you can use to practice.
+Note that the format of our exams has changed over the years.
+
+Once the exam is over, solutions to the exam will be uploaded here.
