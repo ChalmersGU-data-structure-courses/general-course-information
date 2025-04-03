@@ -49,8 +49,8 @@ Fragment **f2** is solved for you already.
 
   *Answer*:
 
-    - Outer loop runs *n* times
-    - For each value of *i*, inner loop runs *n*–1 times.
+    - Outer loop body runs *n* times.
+    - For each value of *i*, inner loop body runs *n*–1 times (and has cost 1).
     - In total, the innermost loop body runs *n*(*n*–1) times.
     - We have T(*n*) = *n*(*n*-1) ∈ O(*n*<sup>2</sup>)$$.
 
