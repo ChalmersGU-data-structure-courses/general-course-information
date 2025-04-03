@@ -14,40 +14,40 @@ Here are suggested solutions to the exercises about complexity, part A.
 ### A2. Asymptotic complexities of code fragments
 
 - **f1**.
-  The loop runs *n* times.
+  The loop body runs *n* times.
   In each iteration, the result increases by one.
   Thus, T(*n*) = *n* ∈ O(*n*) (linear complexity).
 
 - **f2**.
-  The outer loop runs *n* times.
-  In each iteration, the inner loop runs *n*–1 times.
+  The outer loop has *n* iterations.
+  In each iteration, the inner loop body runs *n*–1 times.
   In each iteration, the result increases by one.
   Thus, T(*n*) = *n*(*n*–1) ∈ O(*n*<sup>2</sup>) (quadratic complexity).
 
 - **f3**.
-  The outer loop runs *n* times, ranging over *i* = 1, 2, …, *n*.
-  In each iteration, the inner loop runs *i* times, which is (*n*+1)/2 on average.
+  The body of the outer loop runs *n* times, ranging over *i* = 1, 2, …, *n*.
+  In each iteration, the inner loop body runs *i* times, which is (*n*+1)/2 on average.
   In each iteration, the result increases by one.
   In total, this increases the result by 1 + 2 + … + *n* = (*n*+1)/2 + (*n*+1)/2 + … + (*n*+1)/2 = *n*(*n*+1)/2.
   Thus, T(*n*) = *n*(*n*+1)/2 ∈ O(*n*<sup>2</sup>) (quadratic complexity).
 
   **Note**:
-  The complexity of the sum 1 + 2 + … + *n* can be determined without knowing the closed formula for it: T(*n*) = 1 + 2 + … + *n* ≤ *n* ∙ *n* = *n*<sup>2</sup> ∈ O(*n*<sup>2</sup>).
+  The growth rate of the sum 1 + 2 + … + *n* can be determined without knowing the closed formula for it: T(*n*) = 1 + 2 + … + *n* ≤ *n* ∙ *n* = *n*<sup>2</sup> ∈ O(*n*<sup>2</sup>).
 
 - **f4**.
-  The outer loop runs ⌊*n*/4⌋ times.
-  In each iteration, the middle loop runs ⌊*n*/9⌋ times, and in each of its iterations, the inner loop runs ⌊*n*/25⌋ times.
+  The outer loop has ⌊*n*/4⌋ iterations.
+  In each iteration, the middle loop runs ⌊*n*/9⌋ times, and in each of its iterations, the inner loop body runs ⌊*n*/25⌋ times.
   Thus, T(*n*) = ⌊*n*/4⌋·⌊*n*/9⌋·⌊*n*/25⌋ ≤ *n*<sup>3</sup>/(4·9·25) ∈ O(*n*<sup>3</sup>).
 
 - **f5**.
-  The first loop runs *n* times; in each iteration, the result increases by one.
-  The same happens with the second loop, except it runs *n*+1 times.
+  The body of the first loop runs *n* times; in each iteration, the result increases by one.
+  The same happens with the second loop, except it has *n*+1 iterations.
   Thus, T(*n*) = *n* + (*n*+1) ∈ O(*n*) (linear complexity).
 
 - **f6**.
   Let us first look at the nested loops at the start.
   It is the same as in **f3**, so it runs *n*(*n*+1)/2 times.
-  The loop at the end runs *n* times, so it increases the final result by *n*.
+  The body of the loop at the end runs *n* times, so it increases the final result by *n*.
   Thus, T(*n*) = *n*(*n*+1)/2 + *n* ∈ O(*n*<sup>2</sup>) (quadratic complexity).
 
 ### A3. Complexity of sorting algorithms
@@ -87,20 +87,20 @@ See the lecture slides for Stacks & Queues.
 ### A7. Asymptotic complexities of code fragments
 
 - **f7**.
-  The outer loop runs [log<sub>2</sub>(*n*) + 1] times, and the inner loop runs *n* times.
+  The outer loop has [log<sub>2</sub>(*n*) + 1] iterations, and each time the inner loop body runs *n* times.
   In total, T(*n*) = [log<sub>2</sub>(*n*) + 1] *n* ∈ O(*n* log(*n*)).
 
 - **f8**.
   The outer loop ranges over *i* = 1, 2, 2<sup>2</sup>, …, 2<sup>*m*</sup> where *m* is maximal such that 2<sup>*m*</sup> ≤ *n*.
-  This means *m* = ⌊log<sub>2</sub>(*n*)⌋, so the outer loop runs 1 + ⌊log<sub>2</sub>(*n*)⌋ times.
+  This means *m* = ⌊log<sub>2</sub>(*n*)⌋, so the outer loop has 1 + ⌊log<sub>2</sub>(*n*)⌋ iterations.
   In each iteration, the inner loop runs *n*<sup>2</sup> times.
   In each iteration, the result increases by one.
   Thus, T(*n*) = (1 + ⌊log<sub>2</sub>(*n*)⌋) *n*<sup>2</sup> ∈ O(*n*<sup>2</sup> log(*n*)).
 
 - **f9**: (This one is trickier that it seems)
 
-    - The outer loop runs [log<sub>2</sub>(*n*) + 1] = O(log *n*) times.
-    - The inner loop is a bit more tricky, it runs *i* times, where the value of *i* varies with every execution of the outer loop.
+    - The body of the outer loop runs [log<sub>2</sub>(*n*) + 1] = O(log *n*) times.
+    - The loop loop is a bit more tricky, it has *i* iterations, where the value of *i* varies with every execution of the outer loop body.
       It runs 1 time the first time, 2 times the second time, then 4 times, then 8 times, and so on.
       In total, it is called [log<sub>2</sub>(*n*)] + 1 times (since it is controlled by the outer loop).
       So in total, the innermost loop body runs the following number of times: T(*n*) = 1 + 2 + 4 + 8 + ... + 2<sup>[log<sub>2</sub>(*n*)]</sup>.
