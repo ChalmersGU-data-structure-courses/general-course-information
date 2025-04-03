@@ -23,16 +23,6 @@ What is the asymptotic time complexity (in *n*) of the following operations, ass
 The moral is that all data structures make tradeoffs – choosing a different representation will make some operations faster but others slower.
 
 **A2**.
-What are the orders of growth of these functions of *n*?
-
-- 3*n*<sup>3</sup> + 2*n*<sup>2</sup> + 199
-- 3*n*<sup>3</sup> – 2*n*<sup>2</sup> – 199
-- 3*n*<sup>3</sup> · 2*n*<sup>2</sup> · 199
-- 3*n*<sup>3</sup> / 2*n*<sup>2</sup> / 199
-- (*n* + 2*n*<sup>2</sup>)(2*n* + 3*n*<sup>2</sup>)
-- (*n* + 2*n*)(2 log<sub>2</sub>(*n*) + 3 log<sub>2</sub>(*n*))
-
-**A3**.
 Calculate the asymptotic complexities of the following code fragments.
 Although they are toy examples, the techniques you use are just the same as for realistic programs.
 Each procedure has been written so that its asymptotic complexity is the same as the order of growth of the mathematical function it computes (why is that?).
@@ -104,7 +94,7 @@ Fragment **f2** is solved for you already.
         sum += 1
     ```
 
-**A4**.
+**A3**.
 Consider an array of n integers.
 What are the worst-case and average-case asymptotic complexities of sorting the array using:
 
@@ -115,19 +105,19 @@ What are the worst-case and average-case asymptotic complexities of sorting the 
 Parts of this question are answered by the lectures on sorting.
 For other parts, you may find the answer in the course book.
 
-**A5**.
+**A4**.
 Suppose you have an array of *n* elements, then you can check if it has duplicate elements in O(*n*<sup>2</sup>) time by looping over every pair of elements.
 But if the array is sorted, you can do it in O(*n*) time.
 How?
 
-**A6** (exercise 1.4.12 from S&W). Write a program that, given two sorted arrays of *n* integer values, prints all elements that appear in both arrays, in sorted order. The running time of your program should be proportional to *n* in the worst case.
+**A5** (exercise 1.4.12 from S&W). Write a program that, given two sorted arrays of *n* integer values, prints all elements that appear in both arrays, in sorted order. The running time of your program should be proportional to *n* in the worst case.
 
 This program is very similar to a step in one of the algorithms that you have seen in the lectures, but with an small but important difference.
 
 - What is this program similar to?
 - What is the difference?
 
-**A7**. This question is about adding an operation to dynamic arrays that deletes the last element of the array.
+**A6**. This question is about adding an operation to dynamic arrays that deletes the last element of the array.
 
 1. The last element of a dynamic array can be deleted in O(1) time. How?
 2. Suppose that we do not try to resize the underlying array when deleting the last element. Then the dynamic array can end up with unlimited overhead – for example, we can end up with an array of capacity 1024 but only one element stored in it. How?
@@ -135,7 +125,7 @@ This program is very similar to a step in one of the algorithms that you have se
 4. (*Harder*) Tweak the rule in part (3) so that the O(*n*) runtime is preserved. Persuade yourself that your design works.
 5. (*Much harder, extremely optional*) Learn about the [potential method](https://en.wikipedia.org/wiki/Potential_method) (not covered in this course, unless we have spare time later) and use it to prove that your design has amortized complexity O(1).
 
-**A8**. Calculate the asymptotic complexities of the following code fragments, just as you did in **A3** above.
+**A7**. Calculate the asymptotic complexities of the following code fragments, just as you did in **A2** above.
 
 - **f7**:
 

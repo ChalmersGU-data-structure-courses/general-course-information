@@ -11,16 +11,7 @@ Here are suggested solutions to the exercises about complexity, part A.
 3. Constant, O(1): increase the length of the array by one and add the element to the end.
 4. Linear, O(*n*): in the worst case, the element needs to be inserted at the front, requiring all other elements to move one step further.
 
-### A2. Orders of growth
-
-- 3*n*<sup>3</sup> + 2*n*<sup>2</sup> + 199 ∈ O(*n*<sup>3</sup>)
-- 3*n*<sup>3</sup> – 2*n*<sup>2</sup> – 199 ∈ O(*n*<sup>3</sup>)
-- 3*n*<sup>3</sup> · 2*n*<sup>2</sup> · 199 ∈ O(*n*<sup>5</sup>)
-- 3*n*<sup>3</sup> / 2*n*<sup>2</sup> / 199 ∈ O(*n*)
-- (*n* + 2*n*<sup>2</sup>)(2*n* + 3*n*<sup>2</sup>) ∈ O(*n*<sup>4</sup>)
-- (*n* + 2*n*)(2 log<sub>2</sub>(*n*) + 3 log<sub>2</sub>(*n*)) ∈ O(*n* log(*n*))
-
-### A3. Asymptotic complexities of code fragments
+### A2. Asymptotic complexities of code fragments
 
 - **f1**.
   The loop runs *n* times.
@@ -59,7 +50,7 @@ Here are suggested solutions to the exercises about complexity, part A.
   The loop at the end runs *n* times, so it increases the final result by *n*.
   Thus, T(*n*) = *n*(*n*+1)/2 + *n* ∈ O(*n*<sup>2</sup>) (quadratic complexity).
 
-### A4. Complexity of sorting algorithms
+### A3. Complexity of sorting algorithms
 
 - Insertion sort has worst-case complexity O(*n*<sup>2</sup>) and average-case complexity O(*n*<sup>2</sup>).
 
@@ -68,12 +59,12 @@ Here are suggested solutions to the exercises about complexity, part A.
 - Quicksort has worst-case complexity O(*n*<sup>2</sup>) and average-case complexity O(*n* log(*n*)), assuming a uniform distribution of input orderings.
   An elegant proof can be [found here](https://en.wikipedia.org/wiki/Quicksort#Using_a_binary_search_tree).
 
-### A5. Checking for duplicates
+### A4. Checking for duplicates
 
 In a sorted array, duplicate elements appear in right after one another.
 So to check for duplicates, it suffices for 0 ≤ *i* < *n*–1, to check if **a**[*i*] equals **a**[*i*+1].
 
-### A6. Print elements from two sorted arrays
+### A5. Print elements from two sorted arrays
 
 Here is a rough sketch of the program:
 
@@ -89,11 +80,11 @@ Regarding the two questions:
 - This program is very similar to the merging step in merge sort.
 - The difference is that in merge sort we keep all elements, but here we only keep the ones that are equal.
 
-### A7. Deletion from a dynamic array
+### A6. Deletion from a dynamic array
 
 See the lecture slides for Stacks & Queues.
 
-### A8. Asymptotic complexities of code fragments
+### A7. Asymptotic complexities of code fragments
 
 - **f7**.
   The outer loop runs [log<sub>2</sub>(*n*) + 1] times, and the inner loop runs *n* times.
