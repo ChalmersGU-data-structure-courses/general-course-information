@@ -11,16 +11,6 @@ Try some of the bonus exercises if you want to learn more.
 ## Core exercises
 
 **A1**.
-Assume you have a program that reads words from the terminal or from a text file – if there are several words in one line it splits them into a list of words.
-Every word is pushed onto a stack, but if the word is "–", the stack is instead popped and the result printed to the terminal.
-When there are no more words to read the program print the number of items that are left on the stack, and then quits.
-
-What is the result of running the program on the following input: `it was - the best - of times - - - it was - the - -`?
-
-**A2**.
-The same as question A1, but using a queue instead.
-
-**A3**.
 Give an algorithm that removes all comments from a program.
 Assume that comments are written as `{ ... }` and can be nested (i.e. `{ a comment with {another comment} inside }`).
 Write your algorithm in pseudocode if you like.
@@ -31,28 +21,30 @@ Suppose that there are two different kinds of comments: `{ ... }` and `[ ... ]`.
 These must be correctly nested, for example `{A [B} C]` is not correct, but `{A [B] C}` is.
 Design an algorithm that checks if all comments are correctly nested.
 
-**A4**.
+**A2**.
 Write a program that takes a [postfix expression](https://en.wikipedia.org/wiki/Reverse_Polish_notation) (as a sequence of strings) and evaluates it to an integer.
 Example: The postfix expression `3 7 5 + 2 / *` means `3 * ((7 + 5) / 2)` and should evaluate to 18.
 Which ADT is useful here?
 (The advantage of postfix expressions is that they don't need any brackets.)
 
-**A5**.
+**A3**.
 Recall the following question from the quiz, about queues:
 
 > Suppose that a client performs an intermixed sequence of (queue) enqueue and dequeue operations.
 > The enqueue operations put the integers 0 through 9 in order onto the queue; the dequeue operations print out the return value.
 > Which of the following sequence(s) can never occur?
 
-Try to come up with a rule that tells if a sequence is possible or not.
+Come up with a rule that tells if a sequence is possible or not.
 
-**A6**.
+**A4**.
 Design a data structure that represents an array of unlimited size: unlike a normal array, there is no maximum index that can be written to.
 It should support the following operations:
 
 - `get(index)`: return the element at a given index; if that element has not yet been set, it should return `null`/`None`.
 
 - `set(index, value)`: modify the element at a given index.
+
+(This implements a *map* with natural numbers as keys.)
 
 <details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Hint:*</summary>
 To implement the data structure, use a normal array but automatically grow it when necessary.
@@ -66,10 +58,7 @@ Note that in `set(...)`, if the index is much bigger than the current size of th
 ## Bonus exercises
 
 **B1**.
-Implement the programs described in questions **A1** and **A2**.
-
-**B2**.
-The same as question **A5**, but for stacks:
+The same as question **A3**, but for stacks:
 
 > Suppose that an intermixed sequence of (stack) push and pop operations are performed.
 > The pushes push the integers 0 through 9 in order; the pops print out the return value.
@@ -78,7 +67,7 @@ The same as question **A5**, but for stacks:
 Try to come up with a rule that tells if a sequence is possible or not.
 Note that this is trickier than for queues.
 
-**B3**.
+**B2**.
 The following exercises are all from Sedgewick & Wayne.
 Note that some of them (but not all) have solutions or hints on the book website.
 

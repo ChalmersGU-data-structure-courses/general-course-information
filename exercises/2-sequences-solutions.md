@@ -4,11 +4,7 @@ Here are suggested solutions to some of the exercises about stacks, queues and l
 
 ## Core exercises
 
-### A1 + A2. What is the result of running the stack/queue program on the following input: `it was - the best - of times - - - it was - the - -`?
-
-See the solution to question **B1** below and then run it for yourself :).
-
-### A3. Give an algorithm that removes all comments from a program.
+### A1. Give an algorithm that removes all comments from a program.
 
 The idea is to go through the program and use a counter to track how deeply nested the current position is.
 This counter behaves like a stack where we don't care about the elements, only the size (instead of push/pop, we increment/decrement).
@@ -41,7 +37,7 @@ When we encounter `}`, we pop from the stack and check that we get "A".
 Similarly, when we encounter `]`, we pop from the stack and check that we get "B".
 After going over the whole program, we check that the stack is empty (otherwise we have an unclosed comment).
 
-### A4. Write a program that reads a postfix expression and evaluates it.
+### A2. Write a program that reads a postfix expression and evaluates it.
 
 [Here's an explanation](http://mathcenter.oxford.emory.edu/site/cs171/postfixExpressions/) of postfix expressions together with a high-level description of the algorithm.
 The main idea can be summarised as follows:
@@ -72,13 +68,13 @@ for each token in the input stream:
 ```
 </details>
 
-### A5. Sequence of queue operations
+### A3. Sequence of queue operations
 
 Regardless of the order in which you give the enqueue/dequeue operations, the result will always be the same: the elements are returned in the same order as they were enqueued.
 
 So if you enqueue the numbers 0 to 9, then the only sequence that can occur is 0, 1, …, 9.
 
-### A6. An array of unlimited size
+### A4. An array of unlimited size
 
 This is a variant of a dynamic array.
 
@@ -117,23 +113,9 @@ class UnlimitedSizeArray:
 
 ## Bonus exercises
 
-### B1. Implement the programs in A1 and A2.
+### B1. Sequence of stack operations
 
-<details markdown=block style="margin-bottom: 16px"><summary markdown=span>*Try to implement it first, and then you can click here to reveal a suggestion in pseudocode.*</summary>
-```python
-stack = new Stack()
-for every word in the input stream:
-    if word == "-":
-        print(stack.pop())
-    else:
-        stack.push(word)
-print(stack.size(), "elements left on stack")
-```
-</details>
-
-### B2. Sequence of stack operations
-
-This is much trickier than **A5**!
+This is much trickier than **A3**!
 
 Suppose the sequence looks like this: **[…, *a*, …, *b*, …, *c*, …]**, where there might or might not be numbers between ***a***, ***b*** and ***c***.
 Now, if ***a > b***, ***a > c*** and ***b < c***, then the sequence is impossible!
@@ -142,7 +124,7 @@ Informal proof:
 When ***a*** is popped, we know that both ***b*** and ***c*** must be on the stack (because they are pushed in numerical order).
 But ***b*** was pushed earlier than ***c*** (because ***b < c***), and therefore ***b*** cannot be popped before ***c*** is popped.
 
-### B3. Exercises from Sedgewick & Wayne
+### B2. Exercises from Sedgewick & Wayne
 
 **Heading "Exercises" on the book website**: <https://algs4.cs.princeton.edu/13stacks/>
 
