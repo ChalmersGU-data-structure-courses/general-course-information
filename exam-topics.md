@@ -87,9 +87,9 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
     - implementing a circular queue in an array
 - Asymptotic complexity
     - for adding and removing, for accessing a position
-    - you may assume that adding to the end of a dynamic array takes constant time, O(1)
+    - implicit amortization: you may assume that adding to the end of a dynamic array takes constant time, O(1)
 
-### Trees in general: properties
+### Rooted trees in general: properties
 - Size and height of a tree
 - Balanced tree, complete tree
 - That the height of a balanced tree is logarithmic in the size of the tree
@@ -226,7 +226,7 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
 - ***You do not need to know***:
     - advanced mathematics to evaluate complexity classes such as integral-based reasoning
     - probabilistic reasoning to determine the average-case complexity class
-    - finding the asymptotic complexity of unknown recursive programs
+    - finding the asymptotic complexity of recursive programs of unfamiliar structure
     - optimality of comparison-based searching and sorting
 
 ### Complexity cheat sheet
