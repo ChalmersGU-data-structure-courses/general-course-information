@@ -6,10 +6,7 @@ The course gives knowledge and skills in the construction and use of data struct
 
 Here you can find general information that are common to (almost) all courses in data structures and algorithms, given at Chalmers University of Technology and University of Gothenburg (GU).
 
-***Note***: The information in these pages is not accurate for the course DIT962!
-
-- Here is the [official syllabus for all courses except DIT962](syllabus.md).
-- And here is the [official syllabus for DIT962](https://kursplaner.gu.se/pdf/kurs/en/DIT962.pdf).
+- Here is the [official syllabus for all courses](syllabus.md).
 
 ## Teacher team
 
@@ -18,6 +15,7 @@ The following are the team of teachers giving the different course instances. We
 - Peter Ljunglöf
 - Jonas Duregård
 - Christian Sattler
+- Yehia Abd Alrahman
 - Hazem Torfah
 - Alex Gerdes
 
@@ -71,29 +69,32 @@ More information:
 
 Note: The academic year is divided into four study periods (läsperioder, LP), where LP1 is September–October, LP2 is November–January, LP3 is January–March, and LP4 is March–June.
 
-### LP1, TDA417+DAT525
+### LP1, TDA417
 - Only Chalmers students
-- Compulsory in the Chalmers programs TKITE, TKIEK, and TKAUT
+- Compulsory in the Chalmers programs TKITE and TKIEK (the IT track)
 - Course responsible: Jonas Duregård
 
-### LP2, DAT038+DIT182
+### LP1, DAT525
+- Only Chalmers students
+- Compulsory in the Chalmers program TKAUT
+- Course responsible: Yehia Abd Alrahman
+
+### LP2, DAT038+DIT183
 - Both Chalmers and GU students
 - Compulsory in the Chalmers programs TKDAT and TKTEM
 - Elective in the Chalmers programs TKELT, TKGBS, TKMAS, TKMED, and TKTFY
-- Elective in the GU programs N1MAT, N2MAT and N2ADS
+- Elective in the GU programs N1MAT and N2MAT
 - Also a single-subject course (fristående kurs) at GU
 - Course responsible: Peter Ljunglöf and Hazem Torfah
 
-### LP4, DIT183+DAT495
+### LP4, DAT495+DIT183
 - Both Chalmers and GU students
-- Compulsory in the GU program N1SOF, and in Chalmers program TIDAL
+- Compulsory in the GU program N1COS, and the Chalmers program TIDAL
+- Also a single-subject course (fristående kurs) at GU
+- Course reponsible: Jonas Duregård
+
+### LP4, DIT183
+- Only GU students
+- Compulsory in the GU program N1SOF
 - Given at the Lindholmen campus
 - Course responsible: Christian Sattler
-
-### LP4, DIT962
-- Only GU students
-- Compulsory in the GU program N1COS
-- Also a single-subject course (fristående kurs) at GU
-- Course reponsible: Alex Gerdes
-- ***Note***: this course has a slightly different syllabus that includes functional programming
-

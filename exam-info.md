@@ -1,11 +1,12 @@
 # Written examination
 
 Upcoming exam dates:
-- 2025 June 5, 14–18,
-- 2025 August 21, 14–18,
-- 2025 end of October (date not decided yet).
+- 29 October 2025, 14–18
+- 15 January 2026, 14–18
+- 4 June 2026, 14-18
+- 20 August 2026, 14-18
 
-Remember to sign up on Ladok a month in advance!
+Remember to sign up in Ladok a month in advance!
 
 ## Topics
 
@@ -47,8 +48,6 @@ Or, formulated differently:
 - To pass the exam, you must pass 5 of the 6 basic questions.
 - To get grade 4, you must also be awarded at least 2 points for the advanced questions.
 - To get grade 5, you must also be awarded at least 4 points for the advanced questions.
-
-(If your course uses the G/VG grading scale, then you need 3 advanced points to get a VG.)
 
 ## Past exams
 
