@@ -95,14 +95,14 @@ Then you will not have to interact with the branching functionality of git.
 
 Each lab is offered in two version: Java and Python.
 You can choose which one to work with.
-If you just open the project, you get the Python version.
+If you just open the project, you get either the Python version or the Java version depending on course.
 To switch to Java, read on.
 
 There are branches **problem-java** and **problem-python** in your project.
 You can have a look at them, but they cannot be modified (they represent the starting state that we will compare your submission with).
 Instead, we recommend you work on the default branch **main**.
 By default, it points to **problem-python**.
-To change it to Java, run the following git commands:
+To change it to Java, run the following git commands (or similarly to switch to Python):
 ```
 git switch --force-create main origin/problem-java
 git push --set-upstream --force origin main
