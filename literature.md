@@ -1,12 +1,62 @@
 # Reading material and other useful resources
 
-## Main literature
-
 The main course book is [our adaptation of the OpenDSA interactive course book](https://chalmersgu-data-structure-courses.github.io/dsabook/).
 
 For doing the labs you will want to look up the library documentations for [Java](https://docs.oracle.com/en/java/javase/17/docs/api/index.html) or [Python](https://docs.python.org/3/library/index.html).
 
-We also have a [review of the programming and maths background](https://chalmersgu-data-structure-courses.github.io/OpenDSA/Published/ChalmersGU-Repetition/html/) required by the course.
+## Course book content, and optional sections
+
+Here is a quick summary of the chapters in the course book.
+Everything except where noted is compulsory material!
+
+1. Introduction
+    - motivation, background knowledge, abstract data types, and binary search
+
+2. Algorithm analysis, part 1: Introduction
+    - terminology, growth rates, asymptotic analysis, binary search
+
+3. Sorting, part 1: Simple algorithms
+    - terminology, selection sort, insertion sort
+    - **optional**: 3.4 Bubble sort
+
+4. Sorting, part 2: Divide-and-conquer algorithms
+    - divide-and-conquer algorithms, mergesort, quicksort
+
+5. Algorithm analysis, part 2: Theory
+    - upper and lower bounds, big-O notation and others
+    - **optional**: 5.3.1 Case study: Lower bounds for sorting
+
+6. Stacks, queues, and lists
+    - stacks, queues, linked lists, dynamic arrays, priority queues
+    - **optional**: 6.9 Double-ended queues
+
+7. Algorithm analysis, part 3: Advanced theory
+    - space complexity, amortised analysis, dynamic arrays
+    - **optional**: 7.4 Recurrence relations, 7.5 Multiple parameters
+
+8. Trees
+    - binary trees, general trees, traversing trees
+
+9. Priority queues and heaps
+    - the heap property, binary heaps, heapsort
+    - **optional**: 9.5 Case study: Hoffman coding
+
+10. Sets and maps
+    - sets, maps, multimaps, sorted sets and maps
+
+11. Search trees
+    - binary search trees (BST), self-balancing trees, AVL trees, 2/3-trees
+    - **optional**: 11.4 Splay trees, 11.5 Disjoint sets, union/find, 11.6 Skip lists
+
+12. Hash tables
+    - hash functions, separate chaining, open addressing, algorithmic complexity attacks
+    - **optional**: 12.8 Different probing strategies, 12.11 Bucket hashing
+
+13. Graphs
+    - definitions and properties, implementations, traversing graphs,
+      minimum spanning trees (MST), MST algorithms (Prim's and Kruskal's),
+      shortest-path problems, Dijkstra's shortest-path algorithm
+    - **optional**: 13.10 Specialised algorithms on weighted graphs
 
 ## Interactive visualisation tools
 
