@@ -10,43 +10,49 @@ Here is a detailed list what topics you should know for the exam, and also what 
 An exam question (particular advanced ones) may still touch on a topic not explicitly listed (or even listed as not required to know).
 But if that happens, solving the question does not require prior knowledge of that topic.
 
+***Another note***:
+The chapter and section references refer to the [online course book](https://chalmersgu-data-structure-courses.github.io/dsabook/).
+
 ***Note for old students***:
 This list is sometimes updated, so there might be differences from when you took the course!
 If you plan to write a re-exam, please make sure you know all topics in this list, even if it was not part of your course instance.
 
 ## Algorithms and programming
 
-### Sorting an array
-- Which algorithms are in-place and why this is an advantage
-- Insertion sort, selection sort
+### Sorting an array (chs. 3--4)
+- (3.1) Terminology: *stable*, *adaptive* and *in-place* sorting algorithms
+- (3.2) Comparing values
+- (3.5--3.7) Insertion sort, selection sort
     - how to loop and insert/select elements
-- Merge sort
+- (4.1) Recursion and divide-and-conquer
+- (4.2--4.3) Mergesort
     - how to merge, how to split, how to recurse
-- Quicksort
+- (4.4--4.5) Quicksort
     - pivot selection strategies you should know: first element, random element, median of three
     - why the pivot is crucial, why selecting the first element can be a bad strategy
     - how to partition, how to recurse
-- Know their asymptotic complexity
+- (3.5.1, 3.6.1, 3.7, 4.2.2, 4.4.2) Know their asymptotic complexity
     - in the worst case / average case / on an already sorted array
     - linear, linearithmic or quadratic, depending on algorithm
 - ***You do not need to know***:
     - timsort, bottom-up merge sort, run-based merge sort, 2-pivot quicksort, Tukey's ninther
     - which algorithms are stable and why this is an advantage
 
-### Searching in an array or a list
-- Linear search in an array and in a linked list
+### Searching in an array or a list (ch. 1)
+- (1.6) Linear search in an array and in a linked list
     - how to do it, using a loop
     - linear complexity
-- Binary search in a sorted array
+- (1.6, 2.8) Binary search in a sorted array
     - how to do it, with and without recursion
     - logarithmic complexity
 
-### Algorithms on graphs
-- Dijkstra's algorithm (uniform-cost search)
-- Prim's and Kruskal's algorithms
+### Algorithms on graphs (ch. 13)
+- (13.4) Graph traversal algorithms
+- (13.5--13.7) Prim's and Kruskal's algorithms
+- (13.8--13.9) Dijkstra's algorithm (uniform-cost search)
 - See [the graphs section](#graphs-properties-features-and-algorithms) below
 
-### Solving coding problems
+### Solving coding problems (no specific chapter or section)
 - Given a problem, knowing which algorithm to use
 - Given some simple code, figuring out what it does
 - Given some code with holes, fill in the holes so that it works
@@ -60,57 +66,60 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
 
 ## Abstract data types and data structures
 
-### Abstract data types (ADTs)
+### Abstract data types (ADTs, chs. 6, 8--13)
+- (1.7) The main ADTs: stacks, queues and lists; priority queues; sets and maps, ordered sets and maps; graphs
+- (chs. 6, 8--13) What ADTs can be implemented by what data structures
 - Given a problem, knowing which ADT to use
-- What ADTs can be implemented by what data structures
-- The main ADTs: stacks, queues and lists; priority queues; sets and maps, ordered sets and maps; graphs
 
-### Data structures to know
+### Data structures to know (chs. 6, 8--13)
 - Given a problem, knowing which data structure to use
 - What data structures can be used to implement what ADTs
 - The main data structures:
-    - Lists: arrays, dynamic arrays, linked lists, stacks, queues
-    - Search trees: binary search trees, 2-3 trees, AVL trees
-    - Priority queues: binary heaps
-    - Hash tables: separate chaining, linear probing
-    - Graphs: undirected, directed, weighted, unweighted
+    - (ch. 6) Lists: arrays, dynamic arrays, linked lists, stacks, queues
+    - (ch. 11) Search trees: binary search trees, 2-3 trees, AVL trees
+    - (ch. 9) Priority queues: binary heaps
+    - (ch. 12) Hash tables: separate chaining, linear probing
+    - (ch. 13) Graphs: undirected, directed, weighted, unweighted
 
-### Lists: dynamic arrays, linked lists, stacks, queues
-- Arrays, dynamic arrays
-    - how to add an element, how to look up an element, how to remove an element
-    - how to resize, when to resize (only for dynamic arrays)
-- Linked lists
+### Lists: dynamic arrays, linked lists, stacks, queues (ch. 6)
+- (6.3--6.4) Linked lists
     - what the nodes look like
     - how to add an element, how to delete an element, how to search for an element
-- Stacks, queues
+- (6.5--6.8) Arrays, dynamic arrays
+    - how to add an element, how to look up an element, how to remove an element
+    - how to resize, when to resize (only for dynamic arrays)
+- (6.2--6.6) Stacks, queues
     - how to implement them using a dynamic array, or a linked list
     - implementing a circular queue in an array
-- Asymptotic complexity
+- (7.3) Asymptotic complexity
     - for adding and removing, for accessing a position
     - implicit amortization: you may assume that adding to the end of a dynamic array takes constant time, O(1)
 
-### Rooted trees in general: properties
-- Size and height of a tree
-- Balanced tree, complete tree
-- That the height of a balanced tree is logarithmic in the size of the tree
-- That an unbalanced tree can in the worst case be similar to a linked list
+### Rooted trees in general: properties (ch. 8)
+- (8.1) Size and height of a tree
+- (8.1) Balanced tree, complete tree
+- (8.1) That the height of a balanced tree is logarithmic in the size of the tree
+- (11.2) That an unbalanced tree can in the worst case be similar to a linked list
+- (8.3, 8.6) How to implement trees
+- (8.4--8.6) Traversing, information flow
 
-### Search trees: BSTs, 2-3 trees, AVL trees
-- Trees without balancing:
+### Search trees: BSTs, 2-3 trees, AVL trees (ch. 11)
+- (11.1) Trees without balancing:
     - binary search trees (BST)
     - how the tree nodes look
     - how to insert, search, delete
     - how to find the minimum or maximum
     - examples when a BST becomes unbalanced (e.g., inserting nodes in order)
-- Self-balancing trees
-    - 2–3 trees, AVL trees
+- (11.2--11.3) Self-balancing trees
+    - AVL
+    - 2/3-trees
     - how the tree nodes look
     - how to insert (including rebalancing), how to search
-- Asymptotic complexity of insertion and searching
+- (11.1--11.3) Asymptotic complexity of insertion and searching
     - linear in the height of the tree
     - hence, logarithmic O(log(*n*)) for balanced trees
     - linear O(*n*) for general general trees
-- Traversing a tree
+- (8.4) Traversing a tree
     - preorder, inorder, postorder
 - ***You do not need to know***:
     - red-black trees
@@ -118,27 +127,27 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
     - how to implement the ordering-based operations other than min and max (such as range queries, successor, predecessor, etc.)
     - but you do need to be able to use these operations in your programs
 
-### Priority queues: binary heaps
-- What the heap property is
+### Priority queues: binary heaps (ch. 9)
+- (9.1) What the heap property is
 - How priority queues are used
-- Binary heaps
+- (9.2) Binary heaps
     - how to store a binary heap in a dynamic array
     - how to delete-min, how to insert
     - asymptotic complexity of operations
 
-### Hash tables: separate chaining, linear probing
-- Hash functions
+### Hash tables: separate chaining, linear probing (ch. 12)
+- (12.1, 12.10) Hash functions
     - what is a good / bad hashing function
     - What is the load factor
-- That hash tables are not ordered
-- How to resize, when to resize
+- (12.1) That hash tables are not ordered
+- (12.3, 12.6) How to resize, when to resize
     - that the hashing has to be redone after resizing
-- Separate chaining
+- (12.3) Separate chaining
     - how to insert, look up, delete a value
-- Linear probing
+- (12.5--12.7) Linear probing
     - how to insert and look up a value
     - lazy deletion
-- Asymptotic complexity
+- (12.9) Asymptotic complexity
     - for insertion, lookup, deletion
     - if you have a good hash function, or a bad one
 - ***You do not need to know***:
@@ -146,10 +155,10 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
     - other ways of deleting in an open addressing hash table than lazy deletion
     - cryptographic hash functions or similar
 
-### Graphs: properties, features and algorithms
-- Undirected / directed, unweighted / weighted
-- Adjacency lists
-- Features of graphs – what are…?
+### Graphs: properties, features and algorithms (ch. 13)
+- (13.1) Undirected / directed, unweighted / weighted
+- (13.2) Adjacency lists, adjacency matrices
+- (13.1) Features of graphs – what are…?
     - nodes (vertices), edges
     - paths, cycles
     - reachability
@@ -159,16 +168,16 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
     - spanning trees, MSTs (for undirected graphs)
     - shortest path trees
     - sparse / dense graphs
-- Searching in graphs
+- (13.4, 13.9) Searching in graphs
     - depth-first search (DFS)
     - breadth-first search (BFS)
     - uniform-cost search (UCS) (Dijsktra's algorithm) for weighted graphs
     - that DFS/BFS solves the reachability problem
     - that BFS builds the shortest path tree in an unweighted graph
     - that UCS/Dijkstra builds the shortest path tree in a weighted graph
-- Minimum-spanning trees
+- (13.5--13.7) Minimum-spanning trees
     - Prim's algorithm and Kruskal's algorithm
-- Asymptotic complexities of the above algorithms
+- (13.6, 13.7, 13.9) Asymptotic complexities of the above algorithms
     - in terms of the size of the graph
     - for sparse graphs, this is equivalently in terms of the number of nodes
 - ***You do not need to know***:
@@ -178,9 +187,9 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
     - Hamilton cycles, Euler circuits
 
 
-## Algorithm analysis
+## Algorithm analysis (chs. 2, 5, 7)
 
-### Order of growth
+### Order of growth (2.4--2.6)
 - The definition of order of growth, O/Ω/Θ-notation
 - Simplifying order of growth
 - The most important order-of-growth classes:
@@ -192,7 +201,7 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
     - growing too fast except for tiny *n*: O(2<sup>*n*</sup>) < O(10<sup>*n*</sup>) < O(*n*!)
 - How to add and multiply complexity classes
 
-### Complexity: definitions, variations
+### Complexity: definitions, variations (2.1--2.3, 5.1--5.4, 7.1--7.2)
 - Different kinds of cost:
     - time (the default)
     - space
@@ -213,7 +222,7 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
 - ***You do not need to know***:
     - how to analyze expected complexity
 
-### Asymptotic complexity: how to analyse it
+### Asymptotic complexity: how to analyse it (2.7--2.9)
 - That asymptotic complexity (sometimes called *complexity class*) is the *order of growth* of the complexity function
 - Given a simple algorithm, how to determine its asymptotic complexity
     - example technique: deriving upper bounds for the asymptotic complexity of loops and sequences
