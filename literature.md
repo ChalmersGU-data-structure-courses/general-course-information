@@ -46,7 +46,7 @@ Everything except where noted is compulsory material!
 
 11. Search trees
     - binary search trees (BST), self-balancing trees, AVL trees, 2/3-trees
-    - **optional**: 11.4 Splay trees, 11.5 Disjoint sets, union/find, 11.6 Skip lists
+    - **optional**: 11.4 Splay trees, 11.6 Disjoint sets, union/find, 11.7 Skip lists
 
 12. Hash tables
     - hash functions, separate chaining, open addressing, algorithmic complexity attacks
