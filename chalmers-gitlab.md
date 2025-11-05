@@ -75,6 +75,10 @@ Of course, you are allowed to add things that do not affect the existing functio
 
 ### Using git
 
+[Git](https://en.wikipedia.org/wiki/Git) is the industry standard for version control and collaborative software development.
+It will pay off to [become familiar](https://git.chalmers.se/help/tutorials/learn_git.md) with it!
+The student union also has a [good introduction to Git](https://data101.dtek.se/beginner/git/index.html).
+
 To interact with the provided git repository, you have several options:
 
 - Using a terminal.
