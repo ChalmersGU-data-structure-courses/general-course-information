@@ -2,6 +2,8 @@
 
 The main course book is [our adaptation of the OpenDSA interactive course book](https://chalmersgu-data-structure-courses.github.io/dsabook/).
 
+There are some very nice [visualisations of data structures and algorithms](#interactive-visualisation-tools) that you should have a look at.
+
 For doing the labs you will want to look up the library documentations for [Java](https://docs.oracle.com/en/java/javase/17/docs/api/index.html) or [Python](https://docs.python.org/3/library/index.html).
 
 ## Course book content, and optional sections
