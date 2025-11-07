@@ -1,7 +1,7 @@
 # Working with the labs on Chalmers GitLab
 
 [Chalmers GitLab](https://git.chalmers.se/dashboard/projects) (git.chalmers.se) is a service to host Git projects within Chalmers.
-To sign in, use **Chalmers Login** (ignore the username/password fields):
+To sign in, use **Chalmers Entra Login** (ignore the username/password fields) and sign in with your **Chalmers account**:
 
 <p align="center"><img src="img/chalmers-gitlab-sign-in.png"></p>
 
