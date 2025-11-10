@@ -59,10 +59,11 @@ More information is on the page [Working with Chalmers GitLab](chalmers-gitlab.m
 
 Labs 2–4 are done in **groups of three**.
 
-- We recommend to form a diverse team and decide on set working times.
-- Work together, never alone.
-  The member with the least coding experience should be writing the code, coached by the others.
-- You can ask for partners on the dedicated discussion channel (see your specific Canvas page), or ask to be assigned by the course-responsible teacher.
+- You can ask for partners on the dedicated discussion channel (see your specific Canvas page), or ask your course-responsible teacher to help you.
+- We recommend to form a diverse team and together decide some rules. For example, the following are some suggestions:
+   - Agree on regular working times.
+   - Work together, never alone.
+   - Let the member with the least coding experience write the code, coached by the others.
 
 Once you have formed a group, assign yourselves to a free lab group in Canvas: go to the *People* page and select the *Groups* tab.
 You will be added to the lab project on Chalmers GitLab as soon as it is published.
@@ -72,12 +73,12 @@ All group members need to actively contribute to the whole submission and be abl
 If you have trouble with a slacking member, contact the course responsible.
 
 **Note**:
-If you want to switch to a different group for the next lab, move yourself to that group in Canvas.
+If you want to switch to a different group for the next lab, contact the course responsible.
 
 ## Supervision
 
 We offer **lab supervision sessions each week** where you can (and should!) get help from course assistants.
-You can choose which and how many you want to attend. Consult TimeEdit to find them. 
+You can choose which and how many you want to attend. Consult TimeEdit to find them.
 
 During each session, we maintain a **queue** of supervision requests.
 See your specific Canvas page for more information.
@@ -87,7 +88,7 @@ A course assistant will join you as soon as possible.
 
 - The course assistants mark handled requests using emojis.
   From this, you can see how far in the queue you are.
-- When it is not busy, you can also just talk to the assistants. 
+- When it is not busy, you can also just talk to the assistants.
 
 **Note**: You can always use the course discussion channels to get help.
 Outside the lab sessions, it may take longer to get an answer.
