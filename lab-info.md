@@ -99,7 +99,6 @@ For Labs 2–4, you must pass a **live supervision checkpoint**.
 This is to demonstrate that all group members contributed to and understand the whole submission.
 
 - Ask for a supervision checkpoint like you would for an ordinary supervision meeting.
-  This can also be online.
 - You need to finish **at least half** of a lab to be eligible for the supervision checkpoint.
   If you are stuck before, please reach out during the lab sessions.
 - Consider doing the supervision checkpoint before your first submission.
