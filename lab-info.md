@@ -57,7 +57,7 @@ More information is on the page [Working with Chalmers GitLab](chalmers-gitlab.m
 
 ## Joining a group
 
-Labs 2–4 are done in **groups of three**.
+Labs 2–4 are done in **groups of at most 3 students**.
 
 - You can ask for partners on the dedicated discussion channel (see your specific Canvas page), or ask your course-responsible teacher to help you.
 - We recommend to form a diverse team and together decide some rules. For example, the following are some suggestions:
