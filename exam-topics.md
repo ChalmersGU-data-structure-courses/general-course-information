@@ -195,7 +195,7 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
 - The most important order-of-growth classes:
     - names for them (constant, logarithmic, linear, linearithmic (linear times logarithmic), quadratic, cubic, exponential)
     - how they compare
-    - negligible growth: O(1) < O(log<sub>2</sub>(*n*)) = O(log<sub>10</sub>(*n*)) = O(log(*n*)) < O(log(*n*)<sup>2</sup>)
+    - negligible growth: O(1) < O(log<sub>2</sub>(*n*)) = O(log<sub>10</sub>(*n*)) = O(log(*n*<sup>2</sup>)) = O(log(*n*)) < O(log(*n*)<sup>2</sup>)
     - acceptable growth for big *n*: O(*n*) < O(*n* log(*n*))
     - growing fast: O(*n*<sup>2</sup>) < O(*n*<sup>2</sup> log(*n*)) < O(*n*<sup>3</sup>)
     - growing too fast except for tiny *n*: O(2<sup>*n*</sup>) < O(10<sup>*n*</sup>) < O(*n*!)
