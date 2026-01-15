@@ -58,7 +58,18 @@ For this, you need an SSH key.
     If this does not work, most likely your key is in a location different from what SSH expects.
     Run the same command with the option `-v` and look for "identify file" to find out.
 
-Here are [more detailed](https://git.chalmers.se/help/user/ssh.md).
+    ***Note***:
+    If you’re being asked for the password for `git@git.chalmers.se`, it usually means the wrong SSH key is being used (or none at all),  or the matching public key is not uploaded to GitLab.
+
+    To fix this, make sure the correct key is either in `~/.ssh/`, or add it to your SSH agent:
+
+     - macOS: `ssh-add --apple-use-keychain /path/to/key`
+     - Windows: start the SSH agent service, then run `ssh-add /path/to/key`
+
+    The safest approach for new users is to use `ssh-keygen` and accept all default options, then upload the public key to GitLab.
+    That way, everything works out-of-the-box.
+
+Here are [more detailed information](https://git.chalmers.se/help/user/ssh.md).
 If you have any problems, ask a teaching assistant during lab supervision or online in the discussion channel of your course.
 
 
