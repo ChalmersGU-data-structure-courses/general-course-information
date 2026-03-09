@@ -18,7 +18,7 @@ You are allowed to bring ***one double sided A4 sheet of hand written notes*** t
 It can contain anything you want, though a summary of the course material is a popular choice.
 
 The sheet ***must be handed in with the exam***, but only for the purpose of determining if it adheres to the rules (and to make grading more entertaining, the sheets are sometimes quite the works of art).
-You can get the sheet back afterwards if you need it for a re-exam or want to frame it and hang it on your wall.
+You can get the sheet back afterwards (TODO: from the Johanneberg student office?) if you need it for a re-exam or want to frame it and hang it on your wall.
 
 ## Format
 
