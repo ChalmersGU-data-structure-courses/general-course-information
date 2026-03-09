@@ -22,32 +22,32 @@ You can get the sheet back afterwards if you need it for a re-exam or want to fr
 
 ## Format
 
-There are 6 basic questions and 3 advanced questions.
-* Each basic question is graded either correct or incorrect.
-* Each advanced questions is awarded up to two points.
+There are 6 basic questions and 3 advanced questions:
+* Each basic question is worth one basic point.
+* Each advanced question is worth two advanced points.
 
-We do not give fractional points.
+The basic questions are designed so everyone should be able to answer all of them correctly.
+We usually grade each of them as pass or fail, overlooking small mistakes.
+In corner cases, we may also give half points.
+
 
 ## Grading
 
-Your grade (U/3/4/5) is calculated according to the following very complicated formula:
+Your grade (U/3/4/5) is calculated according to a very complicated formula:
 
 ```python
-def grade(
-    basic,    # number of basic questions answered correctly
-    advanced, # advanced points obtained
-):
-    if basic < 5:
+def grade(basic_points, advanced_points):
+    if basic_points < 5:
         return 'U'  # sorry, try again next time
     else:
-        return 3 + advanced // 2
+        return 3 + advanced_points // 2
 ```
 
 Or, formulated differently:
 
 - To pass the exam, you must pass 5 of the 6 basic questions.
-- To get grade 4, you must also be awarded at least 2 points for the advanced questions.
-- To get grade 5, you must also be awarded at least 4 points for the advanced questions.
+- To get grade 4, you must also be awarded at least 2 advanced points.
+- To get grade 5, you must also be awarded at least 4 advanced points.
 
 ## Past exams
 
