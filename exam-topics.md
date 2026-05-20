@@ -60,14 +60,14 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
 - Know the pseudocode for some basic algorithms
 - Describe an algorithm using pseudocode (choosing your own syntax)
 - Given a design for a data structure, figuring out how to implement a simple operation
-- Using stacks, queues, sets, maps (including ordered sets and maps), priority queues and graphs in programs
+- Using stacks, queues, sets, maps (including sorted sets and maps), priority queues and graphs in programs
 - Combining basic data structures into the data structures you need in a program (e.g., that a multimap can be implemented as a map from keys to sets of values, or how to implement a sparse matrix)
 
 
 ## Abstract data types and data structures
 
 ### Abstract data types (ADTs, chs. 6, 8--13)
-- (1.7) The main ADTs: stacks, queues and lists; priority queues; sets and maps, ordered sets and maps; graphs
+- (1.7) The main ADTs: stacks, queues and lists; priority queues; sets and maps, sorted sets and maps; graphs
 - (chs. 6, 8--13) What ADTs can be implemented by what data structures
 - Given a problem, knowing which ADT to use
 
