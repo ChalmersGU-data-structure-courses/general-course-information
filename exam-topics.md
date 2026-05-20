@@ -78,7 +78,7 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
     - (ch. 6) Lists: arrays, dynamic arrays, linked lists, stacks, queues
     - (ch. 11) Search trees: binary search trees, 2-3 trees, AVL trees
     - (ch. 9) Priority queues: binary heaps
-    - (ch. 12) Hash tables: separate chaining, linear probing
+    - (ch. 12) Hash tables: separate chaining, open addressing (with linear probing)
     - (ch. 13) Graphs: undirected, directed, weighted, unweighted
 
 ### Lists: dynamic arrays, linked lists, stacks, queues (ch. 6)
@@ -135,7 +135,7 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
     - how to delete-min, how to insert
     - asymptotic complexity of operations
 
-### Hash tables: separate chaining, linear probing (ch. 12)
+### Hash tables: separate chaining, open addressing (ch. 12)
 - (12.1, 12.10) Hash functions
     - what is a good / bad hashing function
     - What is the load factor
@@ -144,7 +144,7 @@ If you plan to write a re-exam, please make sure you know all topics in this lis
     - that the hashing has to be redone after resizing
 - (12.3) Separate chaining
     - how to insert, look up, delete a value
-- (12.5--12.7) Linear probing
+- (12.5--12.7) Open addressing (with linear probing)
     - how to insert and look up a value
     - lazy deletion
 - (12.9) Asymptotic complexity
