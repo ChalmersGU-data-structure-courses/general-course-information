@@ -45,7 +45,7 @@ def grade(basic_points, advanced_points):
 
 Or, formulated differently:
 
-- To pass the exam, you must pass 5 of the 6 basic questions.
+- To pass the exam, you must obtain 5 of 6 basic points.
 - To get grade 4, you must also be awarded at least 2 advanced points.
 - To get grade 5, you must also be awarded at least 4 advanced points.
 
