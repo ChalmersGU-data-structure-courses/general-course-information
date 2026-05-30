@@ -14,7 +14,7 @@ There is a [long list of topics](exam-topics.md) you should know for the exam.
 
 ## Allowed aids
 
-You are allowed to bring ***one double sided A4 sheet of hand written notes*** to the exam.
+You are allowed to bring ***one double-sided A4 sheet of hand-written notes*** to the exam.
 It can contain anything you want, though a summary of the course material is a popular choice.
 
 Take your sheet of notes with you after the exam.
