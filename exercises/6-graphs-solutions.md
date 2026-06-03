@@ -31,7 +31,7 @@ Not much. Only that dist(*v,w*) ≤ dist(*s,v*) + dist(*s,w*).
 
 No.
 
-### A5. Nonisomprphic graphs
+### A5. Nonisomorphic graphs
 
 See here: <http://www.graphclasses.org/smallgraphs.html#nodes2>
 
