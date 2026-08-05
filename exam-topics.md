@@ -1,7 +1,7 @@
 # Exam topics
 {:.no_toc}
 
-Here is a list what topics you should know for the exam, and also what you do not need to know.
+Here is a list of the main topics you should know for the exam, and also what you do not need to know.
 
 * TOC
 {:toc}
