@@ -36,9 +36,7 @@ The course consists of two "modules": one (4.5hp) is the written examination, an
 
 - There are 4 compulsory assignments (called laborations).
   - DAT525 only has 3 assignments (the 4th one is not included). This is because DAT525 only gives 6.0hp, while the other ones give 7.5hp.
-- Every assignment has two main deadlines:
-  - You must submit something for the first deadline, even if it's not working.
-  - The teachers grade and comment on the first submission, and if it's not accepted, you have until the final deadline to correct your solution.
+- See the course page for information about deadlines and procedure to demonstrate your solution.
 - The first laboration is individual.
 - The laborations 2–4 are done in groups of at most 3 students.
 - The labs can be done in Java or Python, and it's up to the lab group to decide.
