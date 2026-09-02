@@ -139,6 +139,10 @@ When you are ready to submit, go to your project page on GitLab and create a tag
 
 <p align="center"><img src="img/create-tag.png"></p>
 
+For LP1 2026, adding any tag will run the automatic tests and create an issue (found under work items in the gitlab webpage).
+
+NOTE: THE INFORMATION BELOW DOES NOT APPLY TO LP1 2026!
+
 The name of a **submission tag** must start with one of the following:
 * `status-update` (for a status update),
 * `submission` (make sure to spell correctly).
@@ -169,6 +173,8 @@ The submission tag(s) should be highlighted as <span style="background-color: #d
 <p align="center"><img src="img/show-tags.png"></p>
 
 ### Getting feedback
+
+NOTE: THE INFORMATION BELOW DOES NOT APPLY TO LP1 2026!
 
 After you submit a lab, we create a special **grading merge request** for your submission.
 There you can see the grading status of all your submissions.
