@@ -17,7 +17,7 @@ Let us know!
 
 ### Configuring your account
 
-GitLab will notify you about new lab projects and gradings of your submissions via your Chalmers student address.
+GitLab will notify you about new lab projects via your Chalmers student address.
 You can change this by [adding an email address](https://git.chalmers.se/-/profile/emails) and then setting this as the [notification email](https://git.chalmers.se/-/profile/notifications).
 **Make sure to configure an email address you actually check.**
 
