@@ -167,13 +167,13 @@ We will only grade the latest submission.
 **Note**:
 The tag must live in the Chalmers GitLab repository, not just your local git clone.
 If you create the tag locally and then push, make sure to **push tags** (in the terminal, this is `git push --tags`).
-
+<!--
 You can check your submission by clicking on ***Code → Tags*** in the Project menu on the left.
 The submission tag(s) should be highlighted as <span style="background-color: #ddd; padding: 0 7px 2px; border-radius: 10px">protected</span>:
 
 <p align="center"><img src="img/show-tags.png"></p>
 
-<!--
+
 ### Getting feedback
 
 After you submit a lab, we create a special **grading merge request** for your submission.
@@ -184,6 +184,6 @@ You should be notified by [email](#configuring-your-account) of any updates.
 Please use the **discussion thread** in the merge request to respond to the feedback, ask for clarifications, or complain about the grading.
 Your grader will respond.
 
--->
 
 If you did not pass in the first grading and wish to resubmit, create another submission tag (e.g., `submission1`).
+-->
