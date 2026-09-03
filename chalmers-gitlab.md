@@ -139,8 +139,10 @@ When you are ready to submit, go to your project page on GitLab and create a tag
 
 <p align="center"><img src="img/create-tag.png"></p>
 
-For LP1 2026, adding any tag will run the automatic tests and create an issue (found under work items in the gitlab webpage).
+Adding any tag will run the automatic tests and create an issue (found under "work items" in the Gitlab webpage). 
+This may take a few minutes, if it takes significantly longer, there may be something wrong with the test system.
 
+<!--
 NOTE: THE INFORMATION BELOW DOES NOT APPLY TO LP1 2026!
 
 The name of a **submission tag** must start with one of the following:
@@ -162,7 +164,7 @@ You can override your submission by creating a new submission.
 This is useful if forgot to push some commits or accidentally put the tag in the wrong place.
 For example, if `submission0` ended up on the wrong commit, put `submission1` on the right one.
 We will only grade the latest submission.
-
+-->
 **Note**:
 The tag must live in the Chalmers GitLab repository, not just your local git clone.
 If you create the tag locally and then push, make sure to **push tags** (in the terminal, this is `git push --tags`).
@@ -172,9 +174,8 @@ The submission tag(s) should be highlighted as <span style="background-color: #d
 
 <p align="center"><img src="img/show-tags.png"></p>
 
+<!--
 ### Getting feedback
-
-NOTE: THE INFORMATION BELOW DOES NOT APPLY TO LP1 2026!
 
 After you submit a lab, we create a special **grading merge request** for your submission.
 There you can see the grading status of all your submissions.
@@ -183,5 +184,7 @@ You should be notified by [email](#configuring-your-account) of any updates.
 
 Please use the **discussion thread** in the merge request to respond to the feedback, ask for clarifications, or complain about the grading.
 Your grader will respond.
+
+-->
 
 If you did not pass in the first grading and wish to resubmit, create another submission tag (e.g., `submission1`).
