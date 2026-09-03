@@ -122,9 +122,8 @@ git branch main-backup main
 ### Using Robograder
 
 We contracted elite roboticists to build <span style="background-color: #ffff00;">R</span><span style="background-color: #ffaf40;">o</span><span style="background-color: #ff8080;">b</span><span style="background-color: #ff40af;">o</span><span style="background-color: #ff00ff;">g</span><span style="background-color: #af40ff;">r</span><span style="background-color: #8080ff;">a</span><span style="background-color: #40afff;">d</span><span style="background-color: #00ffff;">e</span><span style="background-color: #4fffaf;">r</span>™.
-You should **test your code** with Robograder to iron out bugs before you submit.
-To call Robograber, create a tag like you would for a submission (explained below).
-But use a **test tag**, starting with `test` (for example `testPlzKThx`).
+You should **test your code** with Robograder to iron out bugs before your assessment.
+To call Robograber, create a tag (explained below).
 Robograder will respond with an issue in your project.
 Often it is fast, but it can take up to 15 minutes.
 You should be notified by [email](#configuring-your-account).
