@@ -1,6 +1,6 @@
 # Information about the labs
 
-**Note** (2026-03-20):
+**Note** (2026-09-21):
 This information is currently receiving updates.
 Please see your Canvas course page for definite information.
 
@@ -30,14 +30,7 @@ This course is smaller, so you do not have to submit the final assignment (lab 4
 
 ## Schedule
 
-Here is a very rough schedule for the labs, but please see your Canvas pages for more detailed deadlines.
-
-| Lab                         | Published    | Status update  | Final deadline |
-|-----------------------------|--------------|----------------|----------------|
-| Lab 1: Binary search        | Course start | Week 1         | Week 2         |
-| Lab 2: Text indexing        | Week 2       | Week 3         | Week 4         |
-| Lab 3: Plagiarism detection | Week 4       | Week 5         | Week 6         |
-| Lab 4: Path finder          | Week 6       | Week 7         | Week 8         |
+The schedule varies from instance to instance, see your course page for deadlines of each task.
 
 ## The lab system
 
