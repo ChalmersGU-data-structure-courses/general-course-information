@@ -1,9 +1,5 @@
 # Information about the labs
 
-**Note** (2026-09-21):
-This information is currently receiving updates.
-Please see your Canvas course page for definite information.
-
 We have **four compulsory laborations** that give you hands-on experience with key concepts from the course.
 These laborations are programming projects, but also include textual reasoning parts.
 We offer each lab in Java and Python (you can choose).
@@ -37,14 +33,19 @@ The schedule varies from instance to instance, see your course page for deadline
 The lab projects are shared and submitted on [Chalmers GitLab](https://git.chalmers.se/dashboard/projects).
 This is a collaborative platform for software development similar to GitHub and Bitbucket, but hosted privately by Chalmers.
 
-The technincal details are described on the page [Working with Chalmers GitLab](chalmers-gitlab.md), but briefly:
+The technical details are described on the page [Working with Chalmers GitLab](chalmers-gitlab.md), but briefly:
 
 - We add you to a lab project on Chalmers GitLab.
+- Robograder will test your code if you create a *tag* in your GitLab project.
+- To make a submission, show the latest Robograder report, and your code to a teacher at a lab session.
+
+<!-- Not valid LP1-2 2026:
 - Robograder will test your code if you create a tag named *test-(Something)*.
 - To make a submission, create a *tag* named `status-update` or `submission-(Something)`.
   A *merge request* will be opened for your submission.
+- Watch for spelling mistakes when creating tags!
+-->
 
-Watch for spelling mistakes when creating tags!
 
 ## Supervision
 
@@ -66,17 +67,19 @@ A course assistant will join you as soon as possible.
 You can always use the course discussion channels to get help.
 Outside the lab sessions, it may take longer to get an answer.
 
-## Assessment
+### Status report
+
+For the longer labs 2–4, we require an intermediate **status update**.
+This is to force you to start working early enough and provide early feedback.
+
+### Assessment
 
 For each lab, you must pass an **interactive assessment** in a supervision session before the final deadline.
 This is to demonstrate that all group members contributed to, understand, and can explain the whole submission.
 
-You must make a submission before you can get an interactive assessment.
+Robograder must accept your code before you can get an interactive assessment.
 The grader will then go through your submission together with you.
 If you do not pass, you can retry the interactive assessment in another supervision session.
-
-For the longer labs 2–4, we also require an intermediate **status update**.
-This is to force you to start working early enough and provide early feedback.
 
 See your Canvas course page for how to the booking of status updates and interactive assessment will work.
 
@@ -84,14 +87,16 @@ See your Canvas course page for how to the booking of status updates and interac
 
 Labs 2–4 are done in **groups of two or three students** (depending on your course).
 
-- You can ask for partners on the dedicated discussion channel (see your specific Canvas page), or ask your course-responsible teacher to help you.
+- You can ask for partners on the dedicated discussion channel (see your specific Canvas page),
+  or ask your course-responsible teacher to help you.
 - We recommend to form a diverse team and together decide on some rules.
   Here are some suggestions:
    - Agree on regular working times.
    - Work together, never alone.
    - Let the member with the least coding experience write the code, coached by the others.
 
-Once you have formed a group, assign yourselves to a free lab group in Canvas: go to the *People* page and select the *Lab groups* tab.
+Once you have formed a group, assign yourselves to a free lab group in Canvas:
+go to the *People* page and select the *Lab groups* tab.
 You will be added to the lab project on Chalmers GitLab as soon as it is published.
 
 **Note**:
