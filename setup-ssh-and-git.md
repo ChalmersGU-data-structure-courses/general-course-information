@@ -38,11 +38,11 @@ For this, you need an SSH key.
 
 4.  Go to [SSH Keys](https://git.chalmers.se/-/user_settings/ssh_keys) on Chalmers GitLab and click on ***Add new key***:
 
-    ![add-ssh-key-gitlab.png](img/add-ssh-key-gitlab.png)
+    <img src="img/add-ssh-key-gitlab.png" width="50%">
 
 5.  Copy the contents of the file from step 3 into the ***key*** textbox:
 
-    ![paste-ssh-key-gitlab.png](img/paste-ssh-key-gitlab.png)
+    <img src="img/paste-ssh-key-gitlab.png" width="50%">
 
     Give your key a title.
     We recommend you remove the expiration date.

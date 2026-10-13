@@ -3,7 +3,7 @@
 [Chalmers GitLab](https://git.chalmers.se/dashboard/projects) (git.chalmers.se) is a service to host Git projects within Chalmers.
 To sign in, use **Chalmers Entra Login** (ignore the username/password fields) and sign in with your **Chalmers account**:
 
-![](img/chalmers-gitlab-sign-in.png)
+<img src="img/chalmers-gitlab-sign-in.png" width="50%">
 
 You will see all your current projects.
 If a lab project is missing, it could be because:
@@ -49,7 +49,7 @@ Here is how to do it using a terminal:
 1.  Go to the lab repository in your browswer.
     In the top there is a menu, click on *Code*:
 
-    ![](img/chalmers-gitlab-clone-ssh.png)
+    <img src="img/chalmers-gitlab-clone-ssh.png" width="50%">
 
     Copy the SSH URL by clicking the marked button.
 
@@ -60,7 +60,7 @@ Here is how to do it using a terminal:
 
 If you are using [VSCode](https://git.chalmers.se/help/topics/git/clone.md#clone-and-open-in-visual-studio-code) or [IntelliJ](https://git.chalmers.se/help/topics/git/clone.md#clone-and-open-in-intellij-idea), you can also clone directly from the GitLab project page:
 
-![](img/chalmers-gitlab-clone-IDE.png)
+<img src="img/chalmers-gitlab-clone-IDE.png" width="50%">
 
 **Note**:
 If you use the Chalmers lab computers, you may experience a problem with git cloning.
@@ -136,7 +136,7 @@ This limitation is to prevent test spamming and encourage you to think instead.
 We use the **tags** feature of git for lab submission.
 When you are ready to test your code or submit the lab, go to your project page on GitLab and create a tag:
 
-![](img/create-tag.png)
+<img src="img/create-tag.png" width="50%">
 
 Adding any tag will run the automatic tests and create an issue (called a "work item" in GitLab).
 This may take a few minutes, if it takes significantly longer, there may be something wrong with the test system.
@@ -147,11 +147,11 @@ If you create the tag locally and then push, make sure to **push tags** (in the 
 
 After you have created the tag, it should be listed in the menu "Code → Tags":
 
-![](img/show-tags.png)
+<img src="img/show-tags.png" width="50%">
 
 And when Robograder returns with a reply it can be found in the menu "Plan → Work items":
 
-![](img/show-work-items.png)
+<img src="img/show-work-items.png" width="50%">
 
 <!--
 NOTE: THE INFORMATION BELOW DOES NOT APPLY TO LP1-2 2026!
@@ -163,7 +163,7 @@ The name of a **submission tag** must start with one of the following:
 If you want to be nice, add a number (0, 1, 2, …) to indicate your submission attempt.
 Example:
 
-![](img/create-tag-details.png)
+<img src="img/create-tag-details.png" width="50%">
 
 You can write a submission message in the message field.
 
@@ -179,7 +179,7 @@ We will only grade the latest submission.
 You can check your submission by clicking on ***Code → Tags*** in the Project menu on the left.
 The submission tag(s) should be highlighted as <span style="background-color: #ddd; padding: 0 7px 2px; border-radius: 10px">protected</span>:
 
-![](img/show-tags.png)
+<img src="img/show-tags.png" width="50%">
 
 
 ### Getting feedback
