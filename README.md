@@ -16,7 +16,6 @@ The following are the team of teachers giving the different course instances. We
 - Jonas Duregård
 - Christian Sattler
 - Yehia Abd Alrahman
-- Hazem Torfah
 - Alex Gerdes
 
 ## Organisation and examination
