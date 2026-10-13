@@ -1,64 +1,61 @@
 # Reading material and other useful resources
 
-The main course book is [our adaptation of the OpenDSA interactive course book](https://chalmersgu-data-structure-courses.github.io/dsabook/).
+The main course book is
+[our adaptation of the OpenDSA interactive course book](https://chalmersgu-data-structure-courses.github.io/dsabook/).
+A pre-print version of the book will be sold at the lectures.
 
-There are some very nice [visualisations of data structures and algorithms](#interactive-visualisation-tools) that you should have a look at.
+There are some very nice [visualisations of data structures and algorithms](#interactive-visualisation-tools)
+that you should have a look at.
 
-For doing the labs you will want to look up the library documentations for [Java](https://docs.oracle.com/en/java/javase/17/docs/api/index.html) or [Python](https://docs.python.org/3/library/index.html).
+For doing the labs you will want to look up the library documentations for
+[Java](https://docs.oracle.com/en/java/javase/17/docs/api/index.html) or
+[Python](https://docs.python.org/3/library/index.html).
 
 ## Course book content, and optional sections
 
 Here is a quick summary of the chapters in the course book.
-Everything except where noted is compulsory material!
+The sections ending with an asterisk (*) are optional --
+everything else is compulsory material (except where noted below)!
 
 1. Introduction
     - motivation, background knowledge, abstract data types, and binary search
 
-2. Algorithm analysis, part 1: Introduction
+2. Sorting, part 1
+    - terminology, selection sort, insertion sort
+
+3. Algorithm analysis, part 1
     - terminology, growth rates, asymptotic analysis, binary search
 
-3. Sorting, part 1: Simple algorithms
-    - terminology, selection sort, insertion sort
-    - **optional**: 3.4 Bubble sort
-
-4. Sorting, part 2: Divide-and-conquer algorithms
+4. Sorting, part 2
     - divide-and-conquer algorithms, mergesort, quicksort
 
-5. Algorithm analysis, part 2: Theory
+5. Algorithm analysis, part 2
     - upper and lower bounds, big-O notation and others
-    - **optional**: 5.3.1 Case study: Lower bounds for sorting
 
-6. Stacks, queues, and lists
-    - stacks, queues, linked lists, dynamic arrays, priority queues
-    - **optional**: 6.9 Double-ended queues
+6. Sequences
+    - stacks, queues, linked lists, dynamic arrays
 
-7. Algorithm analysis, part 3: Advanced theory
+7. Algorithm analysis, part 3
     - space complexity, amortised analysis, dynamic arrays
-    - **optional**: 7.4 Recurrence relations, 7.5 Multiple parameters
 
-8. Trees
-    - binary trees, general trees, traversing trees
+8. Abstract data types
+    - sequences, priority queues, sets and maps, sorted sets and maps
+    - naive implementations for all the ADTs
 
-9. Priority queues and heaps
-    - the heap property, binary heaps, heapsort
-    - **optional**: 9.5 Case study: Hoffman coding
+8. Trees and heaps
+    - binary trees, traversing trees, other kinds of trees
+    - heaps, the heap property, binary heaps, meldable heaps
 
-10. Sets and maps
-    - sets, maps, multimaps, sorted sets and maps
+10. Search trees
+    - binary search trees (BST), self-balancing trees, AVL trees, 2/3-trees, B-trees
 
-11. Search trees
-    - binary search trees (BST), self-balancing trees, AVL trees, 2/3-trees
-    - **optional**: 11.4 Splay trees, 11.6 Disjoint sets, union/find, 11.7 Skip lists
+11. Hash tables
+    - hash functions, separate chaining, open addressing, linear probing, algorithmic complexity attacks
 
-12. Hash tables
-    - hash functions, separate chaining, open addressing, algorithmic complexity attacks
-    - **optional**: 12.8 Different probing strategies, 12.11 Bucket hashing
-
-13. Graphs
-    - definitions and properties, implementations, traversing graphs,
-      minimum spanning trees (MST), MST algorithms (Prim's and Kruskal's),
-      shortest-path problems, Dijkstra's shortest-path algorithm
-    - **optional**: 13.10 Specialised algorithms on weighted graphs
+12. Graphs
+    - definitions and properties, representing graphs, traversing graphs,
+      shortest-path problems, Dijkstra's shortest-path algorithm,
+      minimum spanning trees (MST), MST algorithms (Prim's and Kruskal's)
 
 ## Interactive visualisation tools
 
