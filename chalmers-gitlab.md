@@ -3,7 +3,7 @@
 [Chalmers GitLab](https://git.chalmers.se/dashboard/projects) (git.chalmers.se) is a service to host Git projects within Chalmers.
 To sign in, use **Chalmers Entra Login** (ignore the username/password fields) and sign in with your **Chalmers account**:
 
-<p align="center"><img src="img/chalmers-gitlab-sign-in.png"></p>
+![](img/chalmers-gitlab-sign-in.png)
 
 You will see all your current projects.
 If a lab project is missing, it could be because:
@@ -49,7 +49,7 @@ Here is how to do it using a terminal:
 1.  Go to the lab repository in your browswer.
     In the top there is a menu, click on *Code*:
 
-    <p align="center"><img src="img/chalmers-gitlab-clone-ssh.png"></p>
+    ![](img/chalmers-gitlab-clone-ssh.png)
 
     Copy the SSH URL by clicking the marked button.
 
@@ -60,7 +60,7 @@ Here is how to do it using a terminal:
 
 If you are using [VSCode](https://git.chalmers.se/help/topics/git/clone.md#clone-and-open-in-visual-studio-code) or [IntelliJ](https://git.chalmers.se/help/topics/git/clone.md#clone-and-open-in-intellij-idea), you can also clone directly from the GitLab project page:
 
-<p align="center"><img src="img/chalmers-gitlab-clone-IDE.png"></p>
+![](img/chalmers-gitlab-clone-IDE.png)
 
 **Note**:
 If you use the Chalmers lab computers, you may experience a problem with git cloning.
@@ -131,18 +131,30 @@ You should be notified by [email](#configuring-your-account).
 You are allowed to use Robograder **five times** for each lab.
 This limitation is to prevent test spamming and encourage you to think instead.
 
-## Submitting a lab
+### Creating a tag
 
 We use the **tags** feature of git for lab submission.
-When you are ready to submit, go to your project page on GitLab and create a tag:
+When you are ready to test your code or submit the lab, go to your project page on GitLab and create a tag:
 
-<p align="center"><img src="img/create-tag.png"></p>
+![](img/create-tag.png)
 
-Adding any tag will run the automatic tests and create an issue (found under "work items" in the Gitlab webpage). 
+Adding any tag will run the automatic tests and create an issue (called a "work item" in GitLab).
 This may take a few minutes, if it takes significantly longer, there may be something wrong with the test system.
 
+**Note**:
+The tag must live in the Chalmers GitLab repository, not just your local git clone.
+If you create the tag locally and then push, make sure to **push tags** (in the terminal, this is `git push --tags`).
+
+After you have created the tag, it should be listed in the menu "Code → Tags":
+
+![](img/show-tags.png)
+
+And when Robograder returns with a reply it can be found in the menu "Plan → Work items":
+
+![](img/show-work-items.png)
+
 <!--
-NOTE: THE INFORMATION BELOW DOES NOT APPLY TO LP1 2026!
+NOTE: THE INFORMATION BELOW DOES NOT APPLY TO LP1-2 2026!
 
 The name of a **submission tag** must start with one of the following:
 * `status-update` (for a status update),
@@ -151,7 +163,7 @@ The name of a **submission tag** must start with one of the following:
 If you want to be nice, add a number (0, 1, 2, …) to indicate your submission attempt.
 Example:
 
-<p align="center"><img src="img/create-tag-details.png"></p>
+![](img/create-tag-details.png)
 
 You can write a submission message in the message field.
 
@@ -163,15 +175,11 @@ You can override your submission by creating a new submission.
 This is useful if forgot to push some commits or accidentally put the tag in the wrong place.
 For example, if `submission0` ended up on the wrong commit, put `submission1` on the right one.
 We will only grade the latest submission.
--->
-**Note**:
-The tag must live in the Chalmers GitLab repository, not just your local git clone.
-If you create the tag locally and then push, make sure to **push tags** (in the terminal, this is `git push --tags`).
-<!--
+
 You can check your submission by clicking on ***Code → Tags*** in the Project menu on the left.
 The submission tag(s) should be highlighted as <span style="background-color: #ddd; padding: 0 7px 2px; border-radius: 10px">protected</span>:
 
-<p align="center"><img src="img/show-tags.png"></p>
+![](img/show-tags.png)
 
 
 ### Getting feedback
@@ -183,7 +191,6 @@ You should be notified by [email](#configuring-your-account) of any updates.
 
 Please use the **discussion thread** in the merge request to respond to the feedback, ask for clarifications, or complain about the grading.
 Your grader will respond.
-
 
 If you did not pass in the first grading and wish to resubmit, create another submission tag (e.g., `submission1`).
 -->
