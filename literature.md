@@ -80,11 +80,9 @@ Most of them are okay and present roughly the same material as we do in this cou
 If you get your hands on a second-hand course book, it's probably good enough.
 But be prepared that there might be differences both in how they are organised and what content is included.
 
-We recommend [Algorithms (2014)](https://www.pearson.com/en-us/subject-catalog/p/algorithms/P200000000597/9780137459575) by Robert Sedgewick and Kevin Wayne as supplemental reading, because they have better explanations of the data structures and algorithms.
+We recommend [Algorithms (2014)](https://algs4.cs.princeton.edu/home/) by Robert Sedgewick and Kevin Wayne as supplemental reading, because they have better explanations of the data structures and algorithms.
 And lots of examples and exercises.
-It's enough to only read part 1, which is [a very affordable e-book](https://www.google.com/search?q=ISBN+9780133799101).
-
-The book has [an excellent website](https://algs4.cs.princeton.edu/home/) which is well worth a look.
+The book website is well worth a look even if you don't buy the book.
 You can find short explanations of each data structure from the book (under the chapter headings on the left of the page), as well [a cheatsheet](https://algs4.cs.princeton.edu/cheatsheet/), and [references to classic papers](https://algs4.cs.princeton.edu/references/).
 
 ## Free books

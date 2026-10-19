@@ -82,7 +82,7 @@ Note: The academic year is divided into four study periods (läsperioder, LP), w
 - Elective in the Chalmers programs TKELT, TKGBS, TKMAS, TKMED, and TKTFY
 - Elective in the GU programs N1MAT and N2MAT
 - Also a single-subject course (fristående kurs) at GU
-- Course responsible: Peter Ljunglöf and Hazem Torfah
+- Course responsible: Peter Ljunglöf
 
 ### LP4, DAT495+DIT183
 - Both Chalmers and GU students
